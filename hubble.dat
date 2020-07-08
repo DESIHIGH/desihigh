@@ -1,6 +1,6 @@
-# Object	r [Mpc]	 v [km/s]
-S. Mag		0.032	+170
-L. Mag		0.034	+290
+# Object	r	 v
+S.Mag		0.032	+170
+L.Mag		0.034	+290
 NGC6822		0.214	-130
 NGC598		0.263	-70	
 NGC221		0.275	-185	

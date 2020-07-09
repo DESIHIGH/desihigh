@@ -2,7 +2,7 @@ import astropy.io.fits as     fits
 import numpy           as     np
 import pylab           as     pl
 
-from   astropy.table         import Table
+from   astropy.table         import Table, join
 from   scipy.ndimage.filters import gaussian_filter
 
 
@@ -14,6 +14,9 @@ for tracer, band in zip(['bgs', 'elg', 'lrgqso'], ['B', 'Z', 'Z']):
 
   assert  np.all(coadd['FIBERMAP'].data['TARGETID'] == zbest['TARGETID'])
 
+  tinfo = Table(coadd['FIBERMAP'].data)['TARGETID', 'FLUX_G', 'FLUX_R', 'FLUX_Z', 'DESI_TARGET', 'BGS_TARGET', 'MWS_TARGET']
+  zbest = join(zbest, tinfo, join_type='left', keys='TARGETID')
+  
   SNRs  = coadd['SCORES'].data['MEDIAN_COADD_SNR_{:s}'.format(band)]
   dChs  = zbest['DELTACHI2']
   
@@ -26,13 +29,18 @@ for tracer, band in zip(['bgs', 'elg', 'lrgqso'], ['B', 'Z', 'Z']):
 
   zs    = zbest[rank][cut]
   zs.sort('TARGETID')
+
+  zs.write('../student_andes/zbest-{}-{}-20200315.fits'.format(tracer, tiles[tracer]), format='fits', overwrite=True)
   
   tids  = zs['TARGETID']
 
-  print(tracer, len(tids))
+  print('\n\n')
+  print(zs)
 
-  isin   = np.isin(coadd['FIBERMAP'].data['TARGETID'], tids)
+  isin    = np.isin(coadd['FIBERMAP'].data['TARGETID'], tids)
 
+  assert  np.all(coadd['FIBERMAP'].data['TARGETID'][isin] == tids)
+  
   wave    = []
   flux    = []
   
@@ -54,6 +62,14 @@ for tracer, band in zip(['bgs', 'elg', 'lrgqso'], ['B', 'Z', 'Z']):
   # pl.plot(wave, flux, lw=1.0)
   # pl.show()
 
-  print(zbest)
+  result  = Table()
+  result['WAVE'] = wave
+
+  for i, x in enumerate(flux.T):
+    result['TARGET{:d}'.format(tids[i])] = flux[:,i]
+    
+  # print(result)
+
+  result.write('../student_andes/coadd-{}-{}-20200315.fits'.format(tracer, tiles[tracer]), format='fits', overwrite=True)  
   
 print('\n\nDone.\n\n')

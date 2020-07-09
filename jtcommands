@@ -1,5 +1,0 @@
-# Change style
-jt -t chesterish
-
-# Change font. 
-jt -tf merriserif -tfs 10 -nf ptsans -nfs 13

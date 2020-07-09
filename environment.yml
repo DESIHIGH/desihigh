@@ -4,7 +4,8 @@ channels:
   - bccp
   - conda-forge
 dependencies:
+  - pip
   - numpy
   - matplotlib
   - pandas
-prefix: /Users/MJWilson/opt/miniconda3/envs/desi@highschool
+  - astropy

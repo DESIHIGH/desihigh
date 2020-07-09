@@ -16,8 +16,10 @@ for tracer, band in zip(['bgs', 'elg', 'lrgqso'], ['B', 'Z', 'Z']):
 
   tinfo = Table(coadd['FIBERMAP'].data)['TARGETID', 'FLUX_G', 'FLUX_R', 'FLUX_Z', 'DESI_TARGET', 'BGS_TARGET', 'MWS_TARGET']
   zbest = join(zbest, tinfo, join_type='left', keys='TARGETID')
+
+  # No stars to start. 
+  zbest = zbest[(zbest['SPECTYPE'] == 'GALAXY')]
   
-  SNRs  = coadd['SCORES'].data['MEDIAN_COADD_SNR_{:s}'.format(band)]
   dChs  = zbest['DELTACHI2']
   
   rank  = np.argsort(dChs)
@@ -30,12 +32,17 @@ for tracer, band in zip(['bgs', 'elg', 'lrgqso'], ['B', 'Z', 'Z']):
   zs    = zbest[rank][cut]
   zs.sort('TARGETID')
 
-  zs.write('../student_andes/zbest-{}-{}-20200315.fits'.format(tracer, tiles[tracer]), format='fits', overwrite=True)
-  
-  tids  = zs['TARGETID']
+  for x in ['NPIXELS', 'NUMEXP', 'NUMTILE', 'NCOEFF']:
+    del zs[x]
+
+  assert  np.all(zs['ZWARN'] == 0)
 
   print('\n\n')
   print(zs)
+  
+  zs.write('../student_andes/zbest-{}-{}-20200315.fits'.format(tracer, tiles[tracer]), format='fits', overwrite=True)
+  
+  tids    = zs['TARGETID']
 
   isin    = np.isin(coadd['FIBERMAP'].data['TARGETID'], tids)
 

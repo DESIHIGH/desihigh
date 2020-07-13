@@ -11,7 +11,7 @@ For an intoduction to  Python, see e.g. www.learnpython.org
 
 For an introduction to Jupyter notebooks, see e.g. www.dataquest.io/blog/jupyter-notebook-tutorial/
 
-If you have any Python questions, www.google.com should be your first port of call.  If you have any questions about this project,
-please post an [issue](www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
+If you're stuck with a Python question, try www.google.com!  If you have any questions about this project,
+please leave us a message [here](www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
-If you've created your own additions, we'd love to see them!  See [`your first commit'](www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for an intro. on adding to this repo.
+If you've created your own additions, we'd love to see them!  Try [`your first commit'](www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for an intro. on adding to this repo.

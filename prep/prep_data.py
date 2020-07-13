@@ -52,7 +52,7 @@ for tracer, band in zip(['mws', 'bgs', 'elg', 'lrg', 'qso'], ['B', 'B', 'Z', 'Z'
   assert  np.all(zs['ZWARN'] == 0)
 
   # Limit number of rows.
-  zs = zs[:25]
+  zs = zs[:5]
   
   print('\n\n')
   print(zs)

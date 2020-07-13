@@ -16,8 +16,4 @@ please leave an issue here:
 
 github.com/michaelJwilson/DESI-HighSchool/issues/new
 
-If you've created your own additions, we'd love to see them!  See
-
-https://medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498
-
-for an intro. to committing to this rpeo.
+If you've created your own additions, we'd love to see them!  See [your first commit](www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for an intro. on adding to this repo.

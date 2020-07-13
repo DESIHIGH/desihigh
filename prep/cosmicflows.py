@@ -1,9 +1,10 @@
+import glob
 import astropy
-import numpy             as np
-import pandas            as pd
-import pylab             as pl
-import matplotlib.pyplot as plt
-import astropy.io.fits   as fits
+import numpy               as     np
+import pandas              as     pd
+import pylab               as     pl
+import matplotlib.pyplot   as     plt
+import astropy.io.fits     as     fits
 
 from   astropy.table       import Table, join, vstack
 from   desitarget.cmx      import cmx_targetmask
@@ -54,55 +55,21 @@ ngc['RA']  *= sign
 
 del ngc['_']
 
-print(ngc)
+# print(ngc)
 
-exit(0)
-
-cflows      = SkyCoord(ra=ngc['RA']*u.degree, dec=ngc['DEC']*u.degree)
+cflows      = SkyCoord(ra=ngc['RA'] * u.degree, dec=ngc['DEC'] * u.degree)
 tiles       = {'mws': 66003, 'bgs': 66003, 'elg': 67230, 'lrg': 68002, 'qso': 68002}
 
-for tracer, band in zip(['bgs'], ['B', 'B', 'Z', 'Z', 'Z']):
-  zbest = Table.read('../../../andes/zbest-0-{}-20200315.fits'.format(tiles[tracer]))
-  coadd = fits.open('../../../andes/coadd-0-{}-20200315.fits'.format(tiles[tracer]))
+zbests      = glob.glob('../../../andes/zbest-*')
 
-  assert  np.all(coadd['FIBERMAP'].data['TARGETID'] == zbest['TARGETID'])
+for fname in zbests:
+  dat                        = fits.open(fname)
+  
+  zbest                      = Table(dat['ZBEST'].data)
+  zbest                      = join(zbest, Table(dat['FIBERMAP'].data), join_type='left', keys='TARGETID')
+  
+  catalog                    = SkyCoord(ra=zbest['TARGET_RA'] * u.degree, dec=zbest['TARGET_DEC'] * u.degree)
 
-  tinfo = Table(coadd['FIBERMAP'].data)['TARGETID', 'FLUX_G', 'FLUX_R', 'FLUX_Z', 'CMX_TARGET', 'TARGET_RA', 'TARGET_DEC']
-  zbest = join(zbest, tinfo, join_type='left', keys='TARGETID')
-
-  if tracer == 'mws':
-    zbest = zbest[(zbest['CMX_TARGET'] & cmx_targetmask.cmx_mask.mask('SV0_MWS')) != 0]
-    zbest = zbest[(zbest['SPECTYPE'] == 'STAR')]
-
-  elif tracer == 'bgs':
-    zbest = zbest[(zbest['CMX_TARGET'] & cmx_targetmask.cmx_mask.mask('SV0_BGS')) != 0]
-    zbest = zbest[(zbest['SPECTYPE'] == 'GALAXY')]
-
-  elif tracer in ['elg', 'lrg']:
-    zbest = zbest[(zbest['CMX_TARGET'] & cmx_targetmask.cmx_mask.mask('SV0_{}'.format(tracer.upper()))) != 0]
-    zbest = zbest[(zbest['SPECTYPE'] == 'GALAXY')]
-
-  else:
-    zbest = zbest[(zbest['CMX_TARGET'] & cmx_targetmask.cmx_mask.mask('SV0_QSO')) != 0]
-    zbest = zbest[(zbest['SPECTYPE'] == 'QSO')]
-
-  zbest.sort('TARGETID')
-
-  catalog = SkyCoord(ra=zbest['TARGET_RA']*u.degree, dec=zbest['TARGET_DEC']*u.degree)
-
-  idxc, idxcatalog, d2d, d3d = catalog.search_around_sky(cflows, (1. / 3600.) * u.deg)
-
-  # print(idxc)
-  # print(idxcatalog)
-
-  pl.plot(zbest['TARGET_RA'], zbest['TARGET_DEC'])
-
-# pl.plot(ngc['RA'], ngc['DEC'], c='k', lw=0.0, marker='.', markersize=1)
-
-# pl.plot(122.9260, 51.2860, '^', markersize=2)
-# pl.plot(139.1309, 1.2249, '^', markersize=2)
-# pl.plot(184.1528, -0.2527, '^', markersize=2)
-# pl.plot(199.1382, 29.9502, '^', markersize=2)
-# pl.plot(221.6547, 1.0052, '^', markersize=2) 
-
+  idxc, idxcatalog, d2d, d3d = catalog.search_around_sky(cflows, (1.1 / 3600.) * u.deg)
+  
 pl.show()

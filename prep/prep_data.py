@@ -6,7 +6,7 @@ from   astropy.table         import Table, join, vstack
 from   scipy.ndimage.filters import gaussian_filter
 from   desitarget.cmx        import cmx_targetmask
 
-
+# Coma on petal 0 of 70510.
 tiles   = {'mws': 66003, 'bgs': 66003, 'elg': 67230, 'lrg': 68002, 'qso': 68002} 
 
 for tracer, band in zip(['mws', 'bgs', 'elg', 'lrg', 'qso'], ['B', 'B', 'Z', 'Z', 'Z']): 

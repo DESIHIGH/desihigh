@@ -5,19 +5,19 @@
 
 An introduction to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers based on Jupyter notebooks, as hosted by Binder (click the logo above).  Start with
 the Intro notebook, followed by the DESI notebook - we hope to add more in the future.  For background to the DESI project,
-start with https://www.desi.lbl.gov/
+start with www.desi.lbl.gov
 
-For an introduction to Python, see e.g. https://www.learnpython.org
+For an introduction to Python, see e.g. learnpython.org
 
-For an introduction to Jupyter notebooks, see e.g. https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+For an introduction to Jupyter notebooks, see e.g. dataquest.io/blog/jupyter-notebook-tutorial/
 
-If you have any Python questions, www.google.com/ should be your first port of call.  If you have any questions about this project,
+If you have any Python questions, google.com should be your first port of call.  If you have any questions about this project,
 please leave an issue here:
 
-https://github.com/michaelJwilson/DESI-HighSchool/issues/new
+github.com/michaelJwilson/DESI-HighSchool/issues/new
 
-Your own additions are encouraged!  See
+If you've created your own additions, we'd love to see them!  See
 
 https://medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498
 
-for an intro. to the process.
+for an intro. to committing to this rpeo.

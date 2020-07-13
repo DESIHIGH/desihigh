@@ -16,3 +16,8 @@ please leave an issue here:
 
 https://github.com/michaelJwilson/DESI-HighSchool/issues/new
 
+Your own additions are encouraged!  See
+
+https://medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498
+
+for an intro. to the process.

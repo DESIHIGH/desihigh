@@ -2,7 +2,8 @@
 
 [![Binder](http://34.94.252.126/badge_logo.svg)](http://34.94.252.126/v2/gh/binder-project/example-conda-environment/master)
 
-![alt text](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/images/Mayall-Star-Trails.jpg?raw=true)
+![GitHub Logo](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/images/Mayall-Star-Trails.jpg?raw=true)
+Format: ![Alt Text](url)
 
 An introduction to DESI for High Schoolers based on Jupyter notebooks, as hosted by Binder (click the logo above).  Start with
 the Intro notebook, followed by the DESI notebook.  We hope to add to this in the future.  For background to the DESI project,

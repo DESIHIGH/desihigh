@@ -3,8 +3,7 @@
 [![Binder](http://34.94.252.126/badge_logo.svg)](http://34.94.252.126/v2/gh/binder-project/example-conda-environment/master)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
-An introduction to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers based on Jupyter notebooks, as hosted by [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with
-the Intro.ipynb notebook, followed by the DESI.ipynb notebook.  This way you can run your own experiments with DESI data!  We hope to add more examples in the future.  For background to the DESI project,
+Welcome!  You've found an introduction to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers based on Jupyter notebooks, as hosted by [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with the Intro.ipynb notebook, followed by the DESI.ipynb notebook.  This way you can run your own experiments with DESI data!  We hope to add more examples in the future.  For background to the DESI project,
 try this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and www.desi.lbl.gov.
 
 For an intoduction to  Python, see e.g. www.learnpython.org

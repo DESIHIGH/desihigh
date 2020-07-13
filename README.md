@@ -4,7 +4,7 @@
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
 An introduction to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers based on Jupyter notebooks, as hosted by [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with
-the [Intro](https://hub.gke.mybinder.org/user/michaeljwilson-desi-highschool-yu1evqti/notebooks/Intro.ipynb) notebook, followed by the [DESI](https://hub.gke.mybinder.org/user/michaeljwilson-desi-highschool-yu1evqti/notebooks/DESI.ipynb) notebook - we hope to add more in the future.  For background to the DESI project,
+the [Intro](https://hub.gke.mybinder.org/user/michaeljwilson-desi-highschool-yu1evqti/notebooks/Intro.ipynb) notebook, followed by the [DESI](https://hub.gke.mybinder.org/user/michaeljwilson-desi-highschool-yu1evqti/notebooks/DESI.ipynb) notebook.  This way you can run your own experiments with DESI data!  We hope to add more examples in the future.  For background to the DESI project,
 see www.desi.lbl.gov
 
 For an introduction to Python, see e.g. learnpython.org

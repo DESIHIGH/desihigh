@@ -1,7 +1,7 @@
 import requests
 
-from   PIL                     import  Image
-from   io                      import  BytesIO
+from   IPython.display         import Image
+from   io                      import BytesIO
 
 
 def cutout(ax, ra, dec):  

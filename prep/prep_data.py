@@ -9,6 +9,8 @@ from   desitarget.cmx        import cmx_targetmask
 # Coma on petal 0 of 70510.
 tiles   = {'mws': 66003, 'bgs': 66003, 'elg': 67230, 'lrg': 68002, 'qso': 68002} 
 
+allids  = []
+
 for tracer, band in zip(['mws', 'bgs', 'elg', 'lrg', 'qso'], ['B', 'B', 'Z', 'Z', 'Z']): 
   zbest = Table.read('../../../andes/zbest-0-{}-20200315.fits'.format(tiles[tracer]))
   coadd = fits.open('../../../andes/coadd-0-{}-20200315.fits'.format(tiles[tracer]))
@@ -61,6 +63,8 @@ for tracer, band in zip(['mws', 'bgs', 'elg', 'lrg', 'qso'], ['B', 'B', 'Z', 'Z'
   
   tids    = zs['TARGETID']
 
+  allids += tids.tolist()
+  
   isin    = np.isin(coadd['FIBERMAP'].data['TARGETID'], tids)
 
   assert  np.all(coadd['FIBERMAP'].data['TARGETID'][isin] == tids)
@@ -95,5 +99,9 @@ for tracer, band in zip(['mws', 'bgs', 'elg', 'lrg', 'qso'], ['B', 'B', 'Z', 'Z'
   # print(result)
 
   result.write('../student_andes/coadd-{}-{}-20200315.fits'.format(tracer, tiles[tracer]), format='fits', overwrite=True)  
+
+allids = np.array(allids)
+
+np.savetxt('../student_andes/all_ids.txt', allids, fmt='%d')
   
 print('\n\nDone.\n\n')

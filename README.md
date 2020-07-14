@@ -1,6 +1,6 @@
 # DESI @ high school
 
-![Binder](http://34.94.252.126/badge_logo.svg)](http://34.94.252.126/v2/gh/binder-project/example-conda-environment/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
 Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, hosted on [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with Intro.ipynb, followed by DESI.ipynb.  This way you can run your own experiments with DESI data!  We hope to add more examples in the future.  For background to the DESI project,

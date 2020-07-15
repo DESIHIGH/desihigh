@@ -13,6 +13,6 @@ For an introduction to Jupyter notebooks, see e.g. www.dataquest.io/blog/jupyter
 If you're stuck with a Python question, first try www.google.com.  If you have any questions about this project,
 please leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
-If you've created your own additions, we'd love to see them!  Try ["your first commit"](www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
+If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)

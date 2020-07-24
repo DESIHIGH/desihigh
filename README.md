@@ -15,6 +15,6 @@ please leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchoo
 
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
-Like what you see?  Click on watch above and you'll get a notification whenever we add new content.
+Like what you see?  Click on watch above and you'll get a notification whenever we add new experiments!
 
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)

@@ -15,7 +15,7 @@ please leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchoo
 
 Like what you see?  Click on watch above and you'll get a notification whenever we add new experiments.
 
-# Finished all the excercises in record time?  Try claim.ipynb for a memento to use in the future.  
+<! Finished all the excercises in record time?  Try claim.ipynb for a memento to use in the future.  
 
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 

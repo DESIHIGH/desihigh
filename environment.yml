@@ -11,3 +11,4 @@ dependencies:
   - astropy
   - scipy
   - Pillow
+  - fitsio

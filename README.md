@@ -18,4 +18,6 @@ Like what you see?  Click on watch above and you'll get a notification whenever 
 
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
+When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will help development in the future.
+
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)

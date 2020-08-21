@@ -6,7 +6,8 @@
 Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, hosted on [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with Intro.ipynb, followed by DESI.ipynb.  This way you can run your own experiments with DESI data.  We hope to add more examples in the future.  For background to the DESI project,
 try this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and www.desi.lbl.gov.
 
-For an intoduction to Python, see e.g. https://www.py4e.com/book
+For an intoduction to Python, see e.g. https://www.py4e.com/book; The CheatSheets directory also has some handy
+summaries of the basics.
 
 For an introduction to Jupyter notebooks, see e.g. www.dataquest.io/blog/jupyter-notebook-tutorial/
 

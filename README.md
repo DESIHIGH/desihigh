@@ -1,6 +1,7 @@
 # DESI @ high school
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
+[![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
 Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, hosted on [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  This way you can run your own experiments with DESI data.  We hope to add more examples in the future.  For background to the DESI project,

@@ -23,6 +23,4 @@ When you're done, don't forget to leave us some [feedback](https://forms.gle/LGK
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 
 
-As seen on: 
-
-![CalStem](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/CalStemNet.png)
+![CalStem](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/CalStemNet.png | width=25)

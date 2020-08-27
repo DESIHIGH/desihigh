@@ -21,3 +21,8 @@ If you've created your own additions, we'd love to see them!  Try ["your first c
 When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will help development in the future.
 
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
+
+
+As seen on: 
+
+![CalStem](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/CalStemNet.png)

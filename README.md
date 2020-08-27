@@ -22,4 +22,4 @@ When you're done, don't forget to leave us some [feedback](https://forms.gle/LGK
 
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 
-<img src="./images/CalStemNet.png" width="20" height="20">
+<img src="./images/CalStemNet.png" width="100" height="100">

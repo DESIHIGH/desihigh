@@ -22,4 +22,4 @@ install:
   - source activate test-environment
 
 script:
-  - python tools/notebook_tester.py
+  - python notebook_tester.py

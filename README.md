@@ -25,5 +25,5 @@ Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighScho
 
 <p float="left">
   <img src="./images/CalStemNet.png" width="325" height="100">
-  <img src="./images/BayScienceFest.png" width="325" height="100">
+  <img src="./images/BayScienceFest.png" width="300" height="85">
 </p>

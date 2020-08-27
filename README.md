@@ -3,10 +3,8 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
-Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, hosted on [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Start with Intro.ipynb, followed by DESI.ipynb.  This way you can run your own experiments with DESI data.  We hope to add more examples in the future.  For background to the DESI project,
+Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, hosted on [Binder](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  This way you can run your own experiments with DESI data.  We hope to add more examples in the future.  For background to the DESI project,
 try this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and www.desi.lbl.gov.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kPXx9tqyzYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 For an intoduction to Python, see e.g. https://www.py4e.com/book; The [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory also has some handy
 summaries of the basics.
@@ -22,6 +20,8 @@ If you've created your own additions, we'd love to see them!  Try ["your first c
 
 When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will help development in the future.
 
-Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
+Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.
 
-<img src="./images/CalStemNet.png" width="275" height="100">
+<img src="./images/CalStemNet.png" width="325" height="100">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPXx9tqyzYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

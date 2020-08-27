@@ -12,4 +12,3 @@ dependencies:
   - scipy
   - Pillow
   - fitsio
-  - spectres

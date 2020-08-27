@@ -23,5 +23,3 @@ When you're done, don't forget to leave us some [feedback](https://forms.gle/LGK
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.
 
 <img src="./images/CalStemNet.png" width="325" height="100">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kPXx9tqyzYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

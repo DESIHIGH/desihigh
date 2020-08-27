@@ -1,14 +1,19 @@
-import subprocess
-import tempfile
+import papermill as pm
 
+pm.execute_notebook(
+   './Intro.ipynb',
+   './pmout/pmout.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)
 
-def _exec_notebook(path):
-    with tempfile.NamedTemporaryFile(suffix=".ipynb") as fout:
-        args = ["jupyter", "nbconvert", "--to", "notebook", "--execute",
-                "--ExecutePreprocessor.timeout=1000",
-                "--output", fout.name, path]
-        subprocess.check_call(args)
+pm.execute_notebook(
+   './DESI.ipynb',
+   './pmout/pmout.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)
 
-
-def test():
-    _exec_notebook('Intro.ipynb')
+pm.execute_notebook(
+   './DesigningDESI.ipynb',
+   './pmout/pmout.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)

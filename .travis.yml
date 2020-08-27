@@ -22,4 +22,4 @@ install:
   - source activate test-environment
 
 script:
-  - py.test --script-launch-mode=subprocess notebook_tester.py
+  - python notebook_tester.py

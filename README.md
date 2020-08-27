@@ -23,11 +23,7 @@ When you're done, don't forget to leave us some [feedback](https://forms.gle/LGK
 
 Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master).  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.
 
-<div class="row">
-  <div class="column">
-    <img src="./images/CalStemNet.png" width="325" height="100">
-  </div>
-  <div class="column">
-    <img src="./images/BayScienceFest.png" width="100" height="100">
-  </div>
-</div>
+<p float="left">
+  <img src="./images/CalStemNet.png" width="325" height="100">
+  <img src="./images/BayScienceFest.png" width="325" height="100">
+</p>

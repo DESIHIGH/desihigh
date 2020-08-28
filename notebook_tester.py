@@ -18,3 +18,9 @@ pm.execute_notebook(
    './pmout/pmout.ipynb',
    parameters=dict(alpha=0.6, ratio=0.1)
 )
+
+pm.execute_notebook(
+   './SnowWhiteDwarf.ipynb',
+   './pmout/pmout.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)

@@ -1,9 +1,11 @@
 import os
 import glob
-import astropy.io.fits as fits
-import numpy as np
+import astropy.io.fits    as fits
+import numpy              as np
 
-from   astropy.table import Table, join
+from   astropy.table      import Table, join
+from   nbodykit.transform import SkyToCartesian
+from   nbodykit.cosmology import Planck15
 
 # https://portal.nersc.gov/project/cosmo/data/legacysurvey/dr8/south/sweep/
 #
@@ -76,7 +78,7 @@ print(cat)
 
 cat.write('../dat/lrg_cat.fits', format='fits', overwrite=True)
 
-indices      = np.random.choice(len(cat), 50, replace=False)
+indices      = np.random.choice(len(cat), 500, replace=False)
 
 cat          = cat[indices]
 
@@ -89,7 +91,16 @@ cat['COLOR'] = 'FUCHSIA'
 
 print(cat)
 
-cat.write('../dat/lrg_cat_viewer.fits', format='fits', overwrite=True)
+# cat.write('../dat/lrg_cat_viewer.fits', format='fits', overwrite=True)
 
 #
 # np.savetxt('../dat/lrg_cat_viewer.txt', cat['RA', 'Dec'])
+
+pos       = SkyToCartesian(cat['RA'], cat['Dec'], cat['REDSHIFT'], Planck15)
+pos       = np.array(pos)
+
+pos[:,0] -= pos[:,0].mean()
+pos[:,1] -= pos[:,1].mean()
+pos[:,2] -= pos[:,2].mean()
+
+np.savetxt('../dat/lrg_cat_pos.txt', pos, delimiter=',') 

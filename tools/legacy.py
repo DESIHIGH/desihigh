@@ -19,3 +19,10 @@ def cutout(ax, ra, dec):
 
   return  url
   
+
+if __name__ == '__main__':
+  fig, ax = plt.subplots(1,1, figsize=(5,5,))
+  
+  url     = cutout(ax, 223.6459, 23.6432)
+
+  print(url)

@@ -14,7 +14,7 @@ Jupyter notebooks make everything easy when it comes python and (data) science. 
 If you get stuck with a python question, first try www.google.com like the pros!  If you have any remaining questions about this project and the science,
 just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  
 
-When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will us develop things better in the future.  You can also show your support by donating a few dollars
+When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will us develop things better in the future.  You can also show your support by donating a few :dollar:
 to our favourite charities!  Check out the sponsor button above if you like, but make sure to get parental consent before making any commitments.
 
 <ins> Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master) </ins>.  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro
@@ -27,4 +27,5 @@ If you've created your own additions, we'd love to see them!  Try ["your first c
 <p float="left">
   <img src="./images/CalStemNet.png", width=350>
   <img src="./images/BayScienceFest.png", width=350>
+  <img src="./images/JupyterCon20.png", width=350>
 </p>

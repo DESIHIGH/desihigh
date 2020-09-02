@@ -25,7 +25,7 @@ and can try any of the remaining noteooks.
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
 <p float="left">
-  <img src="./images/CalStemNet.png", width=300>
-  <img src="./images/BayScienceFest.png", width=300>
-  <img src="./images/JupyterCon20.png", width=300>
+  <img src="./images/CalStemNet.png",     width=250>
+  <img src="./images/BayScienceFest.png", width=250>
+  <img src="./images/JupyterCon20.png",   width=250>
 </p>

@@ -9,18 +9,18 @@ Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic I
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try e.g. https://www.py4e.com/book to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
 
-Everything here is Jupyter notebooks, which makes all things easy when it comes python and (data) science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/)
+Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and (data) science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
-If you get stuck with a python question, first try www.google.com like the pros!  If you have any remaining questions about this project and the science,
+If you get stuck with a python question, first try www.google.com like how the pros do it!  If you have any remaining questions about the science,
 just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  
 
-When you're done, don't forget to get some extra credit by leaving us with what you [liked!](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
+When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 
-:rotating_light:  We're almost ready to go.  You'll first see a startup page, after which you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro and can try any of the remaining noteooks.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
+:rotating_light:  We're almost ready to go.  You'll first see a startup page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try all the rest.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 
-:heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you can get notifications when we add new experiments in the future.
+:heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.
 
-If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
+If you've created your own experiments, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), or leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
 <p float="left">
   <img src="./images/CalStemNet.png",     width=250>

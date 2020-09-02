@@ -5,7 +5,7 @@
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
-Welcome to DESI High!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
+Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
 

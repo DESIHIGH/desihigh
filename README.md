@@ -17,7 +17,7 @@ just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/
 When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will us develop things better in the future.  You can also show your support by donating a few :dollar:
 to our favourite charities!  Check out the sponsor button above if you like, but make sure to get parental consent before making any commitments.
 
-<ins> Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master) </ins>.  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro
+**Now let's get [started!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)**.  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro
 and can try any of the remaining noteooks. 
 
 :heart: what you see?  Click on watch above and you'll get a notification when we add new experiments in the future.
@@ -25,7 +25,7 @@ and can try any of the remaining noteooks.
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
 <p float="left">
-  <img src="./images/CalStemNet.png", width=350>
-  <img src="./images/BayScienceFest.png", width=350>
-  <img src="./images/JupyterCon20.png", width=350>
+  <img src="./images/CalStemNet.png", width=300>
+  <img src="./images/BayScienceFest.png", width=300>
+  <img src="./images/JupyterCon20.png", width=300>
 </p>

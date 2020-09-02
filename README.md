@@ -5,13 +5,13 @@
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
-Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with DESI data hot-off-the-telescope :telescope:.  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and visit www.desi.lbl.gov.
+Welcome!  You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:.  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and visit www.desi.lbl.gov.
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try e.g. https://www.py4e.com/book to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
 
 Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and (data) science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
-If you get stuck with a python question, first try www.google.com like how the pros do it!  If you have any remaining questions about the science,
+If you get stuck with a python question, first try www.google.com like the pros!  If you have any science questions,
 just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!

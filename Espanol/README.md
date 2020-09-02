@@ -8,17 +8,13 @@
 
 ¡Bienvenido a DESI High!  :school_satchel: Encontraste cuadernos de introducción al Instrumento espectroscópico de energía oscura (DESI) para estudiantes de secundaria, amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puede unirse a nosotros y realizar sus propios experimentos con datos DESI recién extraídos del telescopio: telescope: Para una excelente introducción al proyecto DESI, comience con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) y prueba nuestro [sitio web](www.desi.lbl.gov).
 
+Si eres nuevo en python :snake:, ¡no te preocupes! Lo captarás rápidamente. Puede probar este [libro](https://www.py4e.com/book) para comenzar y asegúrese de mantener nuestras [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master / cheatsheets) cercano para proporcionar algunos resúmenes útiles de los conceptos básicos.
 
-Si eres nuevo en python :snake:, ¡no te preocupes! Lo captarás rápidamente. Puede probar este [libro] (https://www.py4e.com/book) para comenzar y asegúrese de mantener nuestras [cheatsheets] (https://github.com/michaelJwilson/DESI-HighSchool/tree/master / cheatsheets) cercano para proporcionar algunos resúmenes útiles de los conceptos básicos.
+Todo aquí está escrito en cuadernos de Jupyter, lo que facilita todo cuando se trata de Python y ciencia de datos. Puede leer todo sobre ellos [aquí](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
-Todo aquí está escrito en cuadernos de Jupyter, lo que facilita todo cuando se trata de Python y ciencia de datos. Puede leer todo sobre ellos [aquí] (www.dataquest.io/blog/jupyter-notebook-tutorial/).
+Si te quedas atascado con una pregunta sobre Python, primero sé como los profesionales y prueba www.google.com. Si tiene alguna pregunta científica, déjenos un [mensaje](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) y nos comunicaremos con usted.
 
-Si te quedas atascado con una pregunta sobre Python, primero sé como los profesionales y prueba www.google.com. Si tiene alguna pregunta científica, déjenos un [mensaje] (https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) y nos comunicaremos con usted.
-
-Cuando haya terminado, no olvide obtener un crédito adicional dejándonos con lo que [le gustó] (https://forms.gle/LGKMVamrtS5StSv56) :star:. Puede mostrar aún más apoyo donando unos pocos :dollar: a nuestra [organización benéfica] favorita (https: //www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), ¡pero asegúrate de convencer a tus padres primero!
-
-:rotating_light:  We're almost ready to go.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
-
+Cuando haya terminado, no olvide obtener un crédito adicional dejándonos con lo que [le gustó](https://forms.gle/LGKMVamrtS5StSv56) :star:. Puede mostrar aún más apoyo donando unos pocos :dollar: a nuestra [organización benéfica] favorita (https: //www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), ¡pero asegúrate de convencer a tus padres primero!
 
 :rotating_light:  Estamos casi listos para partir. Primero verá una página de carga, después de la cual querrá Intro.ipynb y luego DESI.ipynb. En esa etapa, serás un profesional y podrás probar el resto: SnowWhiteDwarf es uno de nuestros favoritos. Ok, wapara ello, [IR] (https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 

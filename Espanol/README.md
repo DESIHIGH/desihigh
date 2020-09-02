@@ -18,7 +18,7 @@ Cuando haya terminado, no olvide obtener un crédito adicional dejándonos con l
 
 :rotating_light:  Estamos casi listos para partir. Primero verá una página de carga, después de la cual querrá Intro.ipynb y luego DESI.ipynb. En esa etapa, serás un profesional y podrás probar el resto: SnowWhiteDwarf es uno de nuestros favoritos. Ok, wapara ello, [IR](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 
-:heart: que ves? Obtenga más información sobre [ver](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single repository) repositorios y recibirá una actualización cuando agreguemos nuevos experimentos. Si ha creado los suyos propios, ¡nos encantaría verlos! Prueba ["tu primera confirmación"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), o simplemente [telhablamos de ello](https: /www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
+:heart: que ves? Obtenga más información sobre [ver](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositorios y recibirá una actualización cuando agreguemos nuevos experimentos. Si ha creado los suyos propios, ¡nos encantaría verlos! Prueba ["tu primera confirmación"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), o simplemente [telhablamos de ello](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>

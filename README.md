@@ -19,7 +19,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :rotating_light:  We're almost ready to go.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 
-:es: ¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README] (https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md) :mexico:
+:es: ¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md) :mexico:
 
 :heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.  If you've created your own, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), or just [tell us all about it](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 

@@ -20,7 +20,7 @@ to our favourite charities!  Check out the sponsor button above if you like, but
 **Now, click [here](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)** to get started!  Following the startup page, you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro
 and can try any of the remaining noteooks. 
 
-:heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories) repositories and you'll get a notification when we add new experiments in the future.
+:heart: what you see?  Find out about [watching](Watching a single repository) repositories and you can get notifications when we add new experiments in the future.
 
 If you've created your own additions, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498) for adding to our work, or leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 

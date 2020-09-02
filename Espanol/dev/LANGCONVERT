@@ -1,0 +1,5 @@
+open notebook, convert all cells.  Extract new notebook with
+
+# jupyter nbconvert --to selectLanguage --NotebookLangExporter.language=es Intro.ipynb
+jupyter nbconvert --to selectLanguage --NotebookLangExporter.language=es DESI.ipynb
+

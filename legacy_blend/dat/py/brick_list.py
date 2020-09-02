@@ -1,7 +1,8 @@
+import numpy as np
 import healpy as hp
 
 from   desitarget.geomask import brick_names_touch_hp
-
+from   desiutil import depend, brick
 
 nside = 32
 
@@ -19,3 +20,23 @@ items = ['0436p000', '0438p000', '0441p000', '0443p000', '0446p000', '0448p000',
 area  = len(items) * 0.25 * 0.25
 
 print(area, hp.pixelfunc.nside2pixarea(nside, degrees=True))
+
+
+
+bricktable        = brick.Bricks(bricksize=0.25).to_table()
+
+bricktable['A']   = ['{:04d}'.format(x) for x in np.array(bricktable['RA1']  * 10.).astype(np.int)]
+bricktable['B']   = ['{:04d}'.format(x) for x in np.array(bricktable['DEC1'] * 10.).astype(np.int)]
+
+bricktable['C']   = ['{:04d}'.format(x) for x in np.array(bricktable['RA2']  * 10.).astype(np.int)]
+bricktable['D']   = ['{:04d}'.format(x) for x in np.array(bricktable['DEC2'] * 10.).astype(np.int)]
+
+bricktable['B']   = [x.replace('-', 'm') if '-' in x else 'p' + x[1:] for x in bricktable['B']] 
+bricktable['D']   = [x.replace('-', 'm') if '-' in x else 'p' + x[1:] for x in bricktable['B']]
+
+bricktable['EXT'] = ['                                    '] * len(bricktable)
+
+for i, _ in enumerate(bricktable['EXT']):
+  bricktable['EXT'][i] = bricktable['A'][i] + bricktable['B'][i] + '-' + bricktable['C'][i] + bricktable['D'][i]
+
+print(bricktable)

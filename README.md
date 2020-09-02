@@ -17,7 +17,7 @@ just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/
 When you're done, don't forget to leave us some [feedback](https://forms.gle/LGKMVamrtS5StSv56) that will us develop things better in the future.  You can also show your support by donating a few :dollar:
 to our favourite charities!  Check out the sponsor button above if you like, but make sure to get parental consent before making any commitments.
 
-:rotating_light:  Now, we're almost ready to go.  You'll first see a startup page, after which you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro and can try any of the remaining noteooks.  Ok, wait for it, now click here to [go](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
+:rotating_light:  We're almost ready to go.  You'll first see a startup page, after which you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro and can try any of the remaining noteooks.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 
 :heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you can get notifications when we add new experiments in the future.
 

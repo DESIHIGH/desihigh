@@ -14,7 +14,7 @@ Everything here is Jupyter notebooks, which makes all things easy when it comes 
 If you get stuck with a python question, first try www.google.com like the pros!  If you have any remaining questions about this project and the science,
 just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  
 
-When you're done, don't forget to get some extra credit by leaving us with what you [liked!](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can also show your support by donating a few :dollar to our favourite charities!  Check out the sponsor button above if you like, but make sure to convince your parents first!
+When you're done, don't forget to get some extra credit by leaving us with what you [liked!](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can also show your support by donating a few :dollar: to our favourite charities!  Check out the sponsor button above if you like, but make sure to convince your parents first!
 
 :rotating_light:  We're almost ready to go.  You'll first see a startup page, after which you'll want Intro.ipynb, followed by DESI.ipynb and so on.  By that stage you'll be a pro and can try any of the remaining noteooks.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 

@@ -24,7 +24,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.  If you've created your own, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), or just [tell us all about it](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
-:whale:  For budding developers, we support [Travis](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool), [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
+:whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
 
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>

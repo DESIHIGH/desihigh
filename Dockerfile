@@ -42,7 +42,7 @@ COPY . .
 # RUN pip3 install jupyter
 # RUN python3 module.py
 
-RUN wget wget https://raw.githubusercontent.com/michaelJwilson/DESI-HighSchool/master/environment.yml
+RUN wget https://raw.githubusercontent.com/michaelJwilson/DESI-HighSchool/master/environment.yml
 
 RUN conda env create -n desihigh -f environment.yml
 
@@ -65,4 +65,4 @@ CMD ["conda", "install", "jupyter"]
 
 CMD ["git", "clone", "https://github.com/michaelJwilson/DESI-HighSchool"]
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+# CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]

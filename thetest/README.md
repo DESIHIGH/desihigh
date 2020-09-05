@@ -1,3 +1,3 @@
 # The Test 
 
-It's not yet exam season at DESI High, keep studying!
+It's not yet exam season at DESI High, keep studying!  We did find these [old pages](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/thetest/TheTest.pdf) lying around, but half of them were destroyed by coffee stains ... 

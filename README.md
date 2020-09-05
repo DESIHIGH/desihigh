@@ -28,9 +28,9 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/thetest/README.md) and graduate from DESI High!
 
-:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com">started for you</a> :earth_africa:. 
+:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a researcher:">started for you</a> :earth_africa:. 
 
-:computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop">loaner laptop </a> (for the Bay Area) programs.  
+:computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>

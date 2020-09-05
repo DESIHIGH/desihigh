@@ -14,7 +14,7 @@ If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You c
 Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and data science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
 If you get stuck with a python question, first be like the pros and try www.google.com!  If you have any science questions,
-just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md).  
+just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 

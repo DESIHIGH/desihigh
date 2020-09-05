@@ -26,6 +26,10 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
 
+:school:  Have a classroom full of students interested in DESI High?  We have an elite team of DESI researchers on standby that can drop in and get things started.
+
+:computer:  Know someone who would love this but has no acess?  Ask us about our [loaner laptop program](desihighinitiative@gmail.com) for the Bay Area.  
+
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>
   <img src="./images/JupyterCon20.png",   width=250>

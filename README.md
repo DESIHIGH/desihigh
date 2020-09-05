@@ -26,7 +26,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
 
-:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers [waiting for your call](desihighinitiative@gmail.com). 
+:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe just waiting for your [call](desihighinitiative@gmail.com) :earth_africa:. 
 
 :computer:  Know someone who would love this but has no access?  Ask us about our [loaner laptop program](desihighinitiative@gmail.com) for the Bay Area.  
 

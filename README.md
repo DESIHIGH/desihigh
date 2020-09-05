@@ -28,7 +28,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com">started for you</a> :earth_africa:. 
 
-:computer:  Know someone who would love this but has no access?  Ask us about our <a href="mailto:desihighinitiative@gmail.com">loaner laptop program</a> for the Bay Area.  
+:computer:  Know someone who would love this but has no access?  Ask about our <a href="mailto:desihighinitiative@gmail.com">loaner laptop program</a> for the Bay Area.  
 
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>

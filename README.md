@@ -14,7 +14,7 @@ If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You c
 Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and data science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
 If you get stuck with a python question, first be like the pros and try www.google.com!  If you have any science questions,
-just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  
+just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 
@@ -28,9 +28,9 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/thetest/README.md) and graduate from DESI High!
 
-:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com">started for you</a> :earth_africa:. 
+:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a researcher:">started for you</a> :earth_africa:. 
 
-:computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop">loaner laptop </a> (for the Bay Area) programs.  
+:computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 
 <p float="left">
   <img src="./images/BayScienceFest.png", width=250>

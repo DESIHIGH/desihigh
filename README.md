@@ -7,11 +7,8 @@
 [![Join the chat at https://gitter.im/DESI-HighSchool/community#](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/community#)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-facebook"></a>
+<button id="close-image"><img src="http://thinkingstiff.com/images/matt.jpg"></button>
+<button id="close-CSS"></button>
 
 Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
 

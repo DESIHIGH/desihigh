@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
-[![Join the chat at https://gitter.im/DESI-HighSchool/community#](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/community#)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
@@ -12,7 +11,7 @@
 [![alt text][rimage]][rhyperlink]
 
 [thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
-[timage]: images/Twitter_buttonsize.png
+[timage]: images/Twitter_buttonsize2.png
 
 [fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
 [fimage]: images/Facebook_buttonsize.png
@@ -29,8 +28,8 @@ If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You c
 
 Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and data science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
-If you get stuck with a python question, first be like the pros and try www.google.com!  If you have any science questions,
-just leave us a [message](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
+If you get stuck with a python question, first be like the pros and try www.google.com!  If you have any science questions :thought_balloon:,
+please leave us a [message](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new) and we'll be more than happy to help answer them for you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 

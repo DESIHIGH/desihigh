@@ -11,6 +11,11 @@
 [hyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
 [image]: images/Twitter_buttonsize.jpg
 
+[![alt text][image]][hyperlink]
+
+[hyperlink]: https://instagram.com
+[image]: images/Instagram.png
+
 Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.

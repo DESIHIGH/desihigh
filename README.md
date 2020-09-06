@@ -6,15 +6,22 @@
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
 [![Join the chat at https://gitter.im/DESI-HighSchool/community#](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/community#)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
-[![alt text][image]][hyperlink]
+[![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
-<a href='http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!'></a>
+[![alt text][fimage]][fhyperlink]
+[![alt text][rimage]][rhyperlink]
 
-[hyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
-[image]: images/Twitter_buttonsize.png
+[thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
+[timage]: images/Twitter_buttonsize.png
+
+[fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
+[fimage]: images/Facebook_buttonsize.png
 
 [ihyperlink]: https://instagram.com
 [iimage]: images/Instagram.png
+ 
+[rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
+[rimage]: images/Reddit_buttonsize.png
 
 Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for senior high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
 

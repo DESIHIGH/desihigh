@@ -8,9 +8,10 @@
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 [![alt text][image]][hyperlink]
 [![alt text][iimage]][ihyperlink]
+<a href='http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!'></a>
 
 [hyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
-[image]: images/Twitter_buttonsize.jpg
+[image]: images/Twitter_buttonsize.png
 
 [ihyperlink]: https://instagram.com
 [iimage]: images/Instagram.png

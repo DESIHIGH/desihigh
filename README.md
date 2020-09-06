@@ -16,7 +16,7 @@
 [image]: images/Twitter_buttonsize.png
 
 [fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
-[fimage]: 
+[fimage]: images/Facebook_buttonsize.png
 
 [ihyperlink]: https://instagram.com
 [iimage]: images/Instagram.png

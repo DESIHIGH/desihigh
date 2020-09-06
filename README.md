@@ -7,6 +7,7 @@
 [![Join the chat at https://gitter.im/DESI-HighSchool/community#](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/community#)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
 [![alt text][image]][hyperlink]
+
 [hyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
 [image]: images/Twitter_buttonsize.jpg
 

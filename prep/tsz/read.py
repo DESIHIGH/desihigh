@@ -13,8 +13,11 @@ from   desimodel.footprint  import is_point_in_desi
 
 dat   = pd.read_csv('pszmmf1.dat', sep='\s+')
 
-ra    = dat.iloc[:, 3]
-dec   = dat.iloc[:, 4]
+# ra    = dat.iloc[:, 3]
+# dec   = dat.iloc[:, 4]
+ra    = dat.iloc[:, 4]
+dec   = dat.iloc[:, 5]
+
 
 tsz   = Table(np.c_[ra, dec], names=['RA', 'DEC'])
 

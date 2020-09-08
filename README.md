@@ -41,7 +41,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
 
-:mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/thetest/README.md) and graduate from DESI High!
+:mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/TheTest/README.md) and graduate from DESI High!
 
 :school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a researcher:">started for you</a> :earth_africa:. 
 

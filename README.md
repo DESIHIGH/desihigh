@@ -5,12 +5,10 @@
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
-<div dir=rtl>
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]
 [![alt text][rimage]][rhyperlink]
-</div>
 
 [thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
 [timage]: images/Twitter_buttonsize2.png

@@ -11,12 +11,11 @@ from   astropy.table        import Table
 from   desimodel.footprint  import is_point_in_desi
 
 
-dat   = pd.read_csv('pszmmf1.dat', sep='\s+')
-ra    = dat.iloc[:, 5]
-dec   = dat.iloc[:, 6]
+dat    = pd.read_csv('pszmmf1.dat', sep='\s+')
+ra     = dat.iloc[:,5]
+dec    = dat.iloc[:,6] 
 
-
-tsz   = Table(np.c_[ra, dec], names=['RA', 'DEC'])
+tsz    = Table(np.c_[ra, dec], names=['RA', 'DEC'])
 
 ## 
 files  = glob.glob('/global/cfs/cdirs/desi/spectro/redux/andes/tiles/*/*/cframe-b0-*.fits')
@@ -27,21 +26,19 @@ for p in files:
     
     plates.append([p.header['TILEID'], p.header['TILERA'], p.header['TILEDEC']])
     
-plates  = np.array(plates)
+plates = np.array(plates)
 
-plates  = Table(plates, names=['TILEID', 'RA', 'DEC'])
+plates = Table(plates, names=['TILEID', 'RA', 'DEC'])
 
+# tiles    = load_tiles(extra=True, onlydesi=False)
+isin       = is_point_in_desi(plates, tsz['RA'], tsz['DEC'], return_tile_index=False)
 
-# tiles = load_tiles(extra=True, onlydesi=False)
-isin, indx = is_point_in_desi(plates, tsz['RA'], tsz['DEC'], return_tile_index=True)
+# indx     = np.unique(indx).astype(np.int)
+# plates   = plates[indx]
 
-indx   = np.unique(indx).astype(np.int)
-
-plates = plates[indx]
-
-desitsz = tsz[isin]
+desitsz    = tsz[isin]
 
 print(plates)
 
-# andes_tsz = dat[isin]
-# andes_tsz.to_csv('andes_tsz.txt')
+desitsz.write('andes_tsz.txt', format='ascii', overwrite=True)
+ 

@@ -22,7 +22,7 @@
 [rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
 [rimage]: images/Reddit_buttonsize.png
 
-Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](www.desi.lbl.gov).
+Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg) and try our [website](https://www.desi.lbl.gov).
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
 
@@ -39,7 +39,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.  If you've created your own, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), or just [tell us all about it](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 
-:whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high). :cloud: 
+:whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high) :cloud:. 
 
 :mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/TheTest/README.md) and [graduate](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Graduation/README.md) from DESI High!
 

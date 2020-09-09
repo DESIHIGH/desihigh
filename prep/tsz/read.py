@@ -1,8 +1,8 @@
 import glob
-import pandas          as pd
-import pylab           as pl
-import astropy.io.fits as fits
-import numpy           as np 
+import pandas               as pd
+import pylab                as pl
+import astropy.io.fits      as fits
+import numpy                as np 
 
 from   desimodel.io         import load_tiles
 from   scipy.spatial        import cKDTree as KDTree
@@ -43,5 +43,5 @@ desitsz = tsz[isin]
 
 print(plates)
 
-# andes_tsz = dat[isin]
-# andes_tsz.to_csv('andes_tsz.txt')
+andes_tsz = dat[isin]
+andes_tsz.to_csv('andes_tsz.txt')

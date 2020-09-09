@@ -26,7 +26,7 @@ Welcome to DESI High!  :school_satchel: You've found introductory notebooks to t
 
 If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
 
-Everything here is written in Jupyter notebooks, which makes all things easy when it comes python and data science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
+Everything here is written in [Jupyter notebooks](https://jupyter.org/), which makes all things easy when it comes python and data science.  You can read all about them [here](www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
 If you get stuck with a python question, first be like the pros and try www.google.com!  If you have any science questions :thought_balloon:,
 join the [DESI High community](https://join.slack.com/t/desihigh/shared_invite/zt-hcbl1fqp-UH60XG7IAkJBCevkDOAf_A) and we'll be more than happy to help answer them for you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  

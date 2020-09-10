@@ -48,7 +48,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 :computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 
 <p float="left">
-  <img src="./images/BayScienceFest.png", width=250>
+  <img src="./images/BASF.jpg",           width=250>
   <img src="./images/JupyterCon20.png",   width=250>
   <img src="./images/CalStemNet.png",     width=250>
 </p>

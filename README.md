@@ -1,6 +1,6 @@
 # DESI High :school_satchel:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.1.0)
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
@@ -33,7 +33,7 @@ join the [DESI High community](https://join.slack.com/t/desihigh/shared_invite/z
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 
-:rotating_light:  We're almost ready to go.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
+:rotating_light:  We're almost ready to go.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.1.0)! :rotating_light:
 
 :mexico:  ¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md) :es:
 

@@ -14,7 +14,7 @@ Todo aquí está escrito en cuadernos de Jupyter, lo que facilita todo cuando se
 
 Si te quedas atascado con una pregunta sobre Python, primero sé como los profesionales y prueba www.google.com. Si tienes alguna pregunta científica, déjanos un [mensaje](https://www.github.com/michaelJwilson/DESI-HighSchool/issues/new) y nos comunicaremos contigo.
 
-Cuando hayas terminado, no olvides obtener un crédito adicional diciendonos lo que [te gustó](https://forms.gle/LGKMVamrtS5StSv56) :star:. Puedes mostrar aún más apoyo donando unos pocos :dollar: a nuestra [organización benéfica favorita](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), ¡pero asegúrate de convencer a tus padres primero!
+Cuando hayas terminado, no olvides obtener un crédito adicional diciéndonos lo que [te gustó](https://forms.gle/LGKMVamrtS5StSv56) :star:. Puedes mostrar aún más apoyo donando unos pocos :dollar: a nuestra [organización benéfica favorita](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), ¡pero asegúrate de convencer a tus padres primero!
 
 :rotating_light:  Estamos casi listos para empezar. Primero verás una página de carga, después de la cual podrás probar Espanol/Intro_es.ipynb y luego Espanol/DESI_es.ipynb. En esa etapa ya serás un profesional y podrás probar el resto, SnowWhiteDwarf es uno de nuestros favoritos. Ok, ¿listo?, [¡VAMOS!](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)! :rotating_light:
 

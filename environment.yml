@@ -15,3 +15,4 @@ dependencies:
   - papermill
   - jupyter
   - pyephem
+  - ffmpeg

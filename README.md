@@ -29,7 +29,7 @@ If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You c
 Everything here is written in [Jupyter notebooks](https://jupyter.org/), which makes all things easy when it comes python and data science.  You can read all about them [here](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
 If you get stuck with a python question, be like the pros and try www.google.com!  :thought_balloon: If you have a science question,
-join the [DESI High community](https://join.slack.com/t/desihigh/shared_invite/zt-hcbl1fqp-UH60XG7IAkJBCevkDOAf_A) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
+leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by donating a few :dollar: to our favourite [charity](https://www.gofundme.com/f/code-nation?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_more), but make sure to convince your parents first!
 

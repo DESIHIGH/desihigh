@@ -26,7 +26,7 @@ pm.execute_notebook(
 )
 
 pm.execute_notebook(
-   './tsz.ipynb',
-   './pmout/tsz.ipynb',
+   './Clusters.ipynb',
+   './pmout/Clusters.ipynb',
    parameters=dict(alpha=0.6, ratio=0.1)
 )

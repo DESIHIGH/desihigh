@@ -76,10 +76,10 @@ El Código de conducta del ciudadano es distribuido por Stumptown Syndicate dist
 
 Partes de texto son derivadas del Django Code of Conduct y del Geek Feminism Anti-Harassment Policy. 
 
-_Revisión 2.3. Publicada el 6 de marzo de 2017.
+_Revisión 2.3. Publicada el 6 de marzo de 2017._
 
-_Revisión 2.2. Publicada el 4 de febrero de 2016.
+_Revisión 2.2. Publicada el 4 de febrero de 2016._
 
-_Revisión 2.1. Publicada el 23 de junio de 2014.
+_Revisión 2.1. Publicada el 23 de junio de 2014._
 
-_Revisión 2.0, adoptada por la junta del Stumptown Syndicate el 10 de enero de 2013. Publicada el 17 de marzo de 2013.
+_Revisión 2.0, adoptada por la junta del Stumptown Syndicate el 10 de enero de 2013. Publicada el 17 de marzo de 2013._

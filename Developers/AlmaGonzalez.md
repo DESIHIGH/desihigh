@@ -7,9 +7,9 @@ It is very close to Guanajuato, one of the most beautiful cities in México. Int
 like a Ballon festival, the Rally, and the Cervantino, just to mention some.
 
 
-<p float="left">
-  <img src="./images/Cervantino.png ", width=250, height=200>
-</p>
+
+![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Cervantino.png)
+
 
 I was recently appointed to be co-chair of the Lyman-alpha working group. I’m starting to help coordinate the Worling Group tasks. I also test and help to 
 improve some of the code used in the WG. For example, I’ve been working with the code that will be used to determine the quasar redshifts, using it in simulated
@@ -22,14 +22,12 @@ be very helpful to understand Dark Matter. Now that I’m closely following the 
 a huge effort from many people. I’m so excited about all the science and knowledge that is being developed every day.
 
 
-<p float="left">
-  <img src="./images/Alma_mayall.jpg ", width=250, height=200>
-</p>
+
+![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Alma_mayall.jpg)
+
 I’m really interested in the popularization of science (Iconmunity and Technovation Girls Guanajuato), for girls mostly, so I dedicate some of my free time
 to a community, where we organize and give small workshops, talks, and science shows. I hope some of them in the future will become scientists.
 
 
+![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Alma_group.jpg)
 
-<p float="left">
-  <img src="./images/Alma_group.jpg ", width=250, height=200>
-</p>

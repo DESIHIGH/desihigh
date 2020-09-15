@@ -1,6 +1,6 @@
 # Dra Mariana Vargas Magaña
 
-Hola, ¡Soy  Mariana Vargas-Magaña!  Vivo en la ciudad de México donde la legendaria Tenochtitlan fue fundada por los Mexicas.  Quiza haz escuchado hablar  de la [Piedra del Sol](https://es.wikipedia.org/wiki/Piedra_del_Sol#/media/Archivo:Piedra_del_Sol_en_MNA.jpg), la cual está en exposición en el [Museo Nacional de antroopología](https://www.mna.inah.gob.mx/) en la Ciudad de México. 
+Hola, ¡Soy  Mariana Vargas-Magaña!  Vivo en la ciudad de México donde la legendaria Tenochtitlan fue fundada por los Mexicas.  Quiza haz escuchado hablar  de la [Piedra del Sol](https://es.wikipedia.org/wiki/Piedra_del_Sol#/media/Archivo:Piedra_del_Sol_en_MNA.jpg), la cual está en exposición en el [Museo Nacional de antropología](https://www.mna.inah.gob.mx/) en la Ciudad de México. 
 
 <p float="left">
   <img src="https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Tenochtitlan.jpg ", width=250, height=200>

@@ -1,6 +1,3 @@
-
-# Dra Alma Gonzalez
-
 # Dra Alma Gonzalez
 
 I’m Alma Xochitl Gonzalez Morales, a junior researcher at the University of Guanajuato!  

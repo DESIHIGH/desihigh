@@ -19,11 +19,11 @@ pm.execute_notebook(
    parameters=dict(alpha=0.6, ratio=0.1)
 )
 
-pm.execute_notebook(
-   './Espanol/DESI_es.ipynb',
-   './pmout/DESI_es.ipynb',
-   parameters=dict(alpha=0.6, ratio=0.1)
-)
+#pm.execute_notebook(
+#   './Espanol/DESI_es.ipynb',
+#   './pmout/DESI_es.ipynb',
+#   parameters=dict(alpha=0.6, ratio=0.1)
+#)
 
 pm.execute_notebook(
    './DesigningDESI.ipynb',

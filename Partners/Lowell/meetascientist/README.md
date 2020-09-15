@@ -2,8 +2,14 @@
 
 Located in San Francisco, Lowell High School is the oldest public high school west of the Mississippi river and has a student body of over 2800 students. Boasting over 250 student-founded and student-led clubs and a prestigious academic reputation, . 
 
-## Lowell's Astronomy Club
+## Astronomy Club
 Lowell's Astronomy Club was founded in the fall of 2019 by sophmores Emma Yu and Stefanie Garcia with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Since then, Astronomy Club has grown to over forty members from all grade-levels and backgrounds. 
+
+## Dev Club
+
+## EECS (Electrical Engineering and Computer Science Club
+
+## Girls Who Code Club
 
 ## The Collaboration
 In the fall of 2020, Astronomy Club, Dev Club, EECS (Electrical Engineering and Computer Science) Club, and Girls Who Code Club all took part in a collaboration to introduce the DESI High project to their peers. Here are some of the workshops and events they organized:

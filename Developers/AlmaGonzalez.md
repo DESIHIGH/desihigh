@@ -10,7 +10,7 @@ I’m now based in León city in the state of Guanajuato.  It is very close to G
 ![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Cervantino.png)
 
 I was recently appointed to be co-chair of the DESI scientists interested in the Lyman-alpha forest and help coordinate everyone to work together!  I also help test and improve the DESI code.  For example, I’ve been testing the code that will be used to determine quasar redshifts, using it together with simulated
-quasars (where we know the truth) so that we can know how well id does!  I also help my graduate students, mostly from the University of Guanajuato, 
+quasars (where we know the truth) so that we can know how well it does!  I also help my graduate students, mostly from the University of Guanajuato, 
 to develop their projects within DESI.
 
 For me, the most intriguing aspect of astronomy/cosmology is the nature of Dark Energy and Dark Matter.  Contributing to know more about these two mysterious 

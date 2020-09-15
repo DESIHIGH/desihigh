@@ -7,7 +7,7 @@ Hola, ¡Soy  Mariana Vargas-Magaña!  Vivo en la ciudad de México donde la lege
   <img src="https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/AztecStone.jpg ",   width=250, height=200>
 </p>
 
-Soy investigadora del [Instituto de Física](https://www.fisica.unam.mx/) de la  [Universidad Nacional Autónoma de México](https://www.unam.mx/).  Co-dirijo el grupo de Cosmología Observacional  IF-ICF con [Sebastien Fromenteau](https://www.fis.unam.mx/directorio/1088/sebastien-strong-fromenteau-strong)y nuestros entusiastas estudiantes!
+Soy investigadora del [Instituto de Física](https://www.fisica.unam.mx/) de la  [Universidad Nacional Autónoma de México](https://www.unam.mx/).  Co-dirijo el grupo de Cosmología Observacional  IF-ICF con [Sebastien Fromenteau](https://www.fis.unam.mx/directorio/1088/sebastien-strong-fromenteau-strong) y nuestros entusiastas estudiantes!
 
 ![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/MarianaGroup.png)
 

@@ -14,7 +14,7 @@ Lowell's Astronomy Club was founded in the fall of 2019 by sophmores Emma Yu and
 
 ## Dev Club
 
-## EECS (Electrical Engineering and Computer Science Club
+## EECS (Electrical Engineering and Computer Science) Club
 
 ## Girls Who Code Club
 

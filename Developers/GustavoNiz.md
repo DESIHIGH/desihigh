@@ -16,6 +16,5 @@ Apart from participating in DESI with our group of researchers and highly motiva
 general public in Mexico. Among other events, the IAC organises the world-class event “Essential Cosmology for the Next Generation”, unofficially known as 
 Cosmology on the Beach. (http://www.cosmologyonthebeach.com/).
 
-<p float="left">
-  <img src="./images/Gustavo.jpg ",   width=250, height=200>
-</p>
+
+![Group](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Developers/images/Gustavo.png)

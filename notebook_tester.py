@@ -55,11 +55,11 @@ pm.execute_notebook(
    parameters=dict(alpha=0.6, ratio=0.1)
 )
 
-pm.execute_notebook(
-   './Espanol/Clusters_es.ipynb',
-   './pmout/Clusters_es.ipynb',
-   parameters=dict(alpha=0.6, ratio=0.1)
-)
+#pm.execute_notebook(
+#   './Espanol/Clusters_es.ipynb',
+#   './pmout/Clusters_es.ipynb',
+#   parameters=dict(alpha=0.6, ratio=0.1)
+#)
 
 pm.execute_notebook(
    './FromMayaToDESI.ipynb',

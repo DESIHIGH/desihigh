@@ -30,3 +30,9 @@ pm.execute_notebook(
    './pmout/Clusters.ipynb',
    parameters=dict(alpha=0.6, ratio=0.1)
 )
+
+pm.execute_notebook(
+   './FromMayaToDESI.ipynb',
+   './pmout/FromMayaToDESI.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)

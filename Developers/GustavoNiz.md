@@ -11,6 +11,6 @@ Universe.  By studying how probable it is to find three galaxies on the vertices
 I hope these ideas become some of the most important in DESI and the next generation of galaxy surveys!
 
 Apart from advising our talented group of researchers and highly motivated graduate students in DESI, I am the Director of the Instituto Avanzado de Cosmologia 
-(IAC)(http://www.iac.edu.mx).  It is a Mexican association that strengthens the research community in cosmology and promotes the study of the Universe among the 
+[IAC](http://www.iac.edu.mx).  It is a Mexican association that strengthens the research community in cosmology and promotes the study of the Universe among the 
 general public in Mexico.  Among other events, the IAC organises the world-class event 'Essential Cosmology for the Next Generation', unofficially known as 
 ['Cosmology on the Beach'](http://www.cosmologyonthebeach.com/).

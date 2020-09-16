@@ -13,7 +13,7 @@ In the fall of 2020, Lowell's Astronomy Club, Dev Club, EECS (Electrical Enginee
 ### Astronomy Club
 Lowell's Astronomy Club was founded in the fall of 2019 by sophmores Emma Yu and Stefanie Garcia with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Since then, Astronomy Club has grown to over forty members from all grade-levels and backgrounds. Some of their activities include giving talks, hosting guest speakers, participating in rocket and experimental design competitions, and hosting star parties and solar viewings.
 
-### Dev Club ![](images/DevClubLogo.png)
+### Dev Club
 Founded by Raphael Cenzano and Cappillen Lee, Lowell Dev Club is a place where anyone can be engaged in the world of computer science. They are focused on teaching high school students how to code using workshops, mentoring, and creating a focused space for students to explore computer science and work on cool projects! You can find out more about their club at www.lowelldev.club, and learn about their parent organization at www.hackclub.com.
 
 ### EECS (Electrical Engineering and Computer Science) Club

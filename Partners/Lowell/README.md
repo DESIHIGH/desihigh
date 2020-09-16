@@ -2,8 +2,8 @@
 ![](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Partners/Lowell/images/LowellHighSchoolMainEntranceFromEuclyptausStreet.jpg)
 Located in San Francisco, Lowell High School is the oldest public high school west of the Mississippi river and has a student body of over 2800 students. With over 250 student-founded and student-led clubs, students of all backgrounds take part in its thriving community and bond over common interests and aspirations. 
 
-## The Collaboration
-In the fall of 2020, Lowell's Astronomy Club, Dev Club, EECS (Electrical Engineering and Computer Science) Club, and Girls Who Code Club all took part in a collaboration to introduce the DESI High project to their peers. Here are some of the workshops and events they organized:
+## Lowell and DESI High
+In the fall of 2020, led by Emma Yu, Lowell High's Student Ambassador at DESI High, Lowell's Astronomy Club, Dev Club, EECS (Electrical Engineering and Computer Science) Club, and Girls Who Code Club all took part in a collaboration to introduce the DESI High project to their peers. Here are some of the workshops and events they organized:
 
 - Dev Club designed a [Python](https://www.lowelldev.club/workshop/desi-python-intro) and [GitHub Basics Workshop](https://www.lowelldev.club/workshop/github-intro) to get started.
 - All four clubs hosted a joint meeting with over 70 students in attendance, introducing them to DESI High and some basic Python and GitHub skills to help them get started on 9/3/2020.

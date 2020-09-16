@@ -1,5 +1,5 @@
 # Lowell High School
-![](images/LowellHighSchoolMainEntranceFromEuclyptausStreet.jpg, width=500)
+![](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Partners/Lowell/images/LowellHighSchoolMainEntranceFromEuclyptausStreet.jpg, width=500)
 Located in San Francisco, Lowell High School is the oldest public high school west of the Mississippi river and has a student body of over 2800 students. With over 250 student-founded and student-led clubs, students of all backgrounds take part in its thriving community and bond over common interests and aspirations. 
 
 ## The Collaboration

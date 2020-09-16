@@ -6,14 +6,14 @@ Located in San Francisco, Lowell High School is the oldest public high school we
 In the fall of 2020, Lowell's Astronomy Club, Dev Club, EECS (Electrical Engineering and Computer Science) Club, and Girls Who Code Club all took part in a collaboration to introduce the DESI High project to their peers. Here are some of the workshops and events they organized:
 
 - Dev Club designed a [Python](https://www.lowelldev.club/workshop/desi-python-intro) and [GitHub Basics Workshop](https://www.lowelldev.club/workshop/github-intro)
-- 9/3 all four clubs hosted a joint meeting with over seventy students that attended, introducing them to DESI High and some basic Python and GitHub skills to help them get started
+- 9/3 All four clubs hosted a joint meeting with over 70 students that attended, introducing them to DESI High and some basic Python and GitHub skills to help them get started
 - 9/4, 9/11, 9/15 Dr. Wilson gave three sessions of talks about DESI High, exploring a few of the notebooks and answering questions from students
-- Astronomy Club will lead another joint meeting going into depth about spectroscopy and the science behind DESI
+- 9/25 Astronomy Club will lead another joint meeting going into depth about spectroscopy and the science behind DESI
 
 ### Astronomy Club
 Lowell's Astronomy Club was founded in the fall of 2019 by sophmores Emma Yu and Stefanie Garcia with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Since then, Astronomy Club has grown to over forty members from all grade-levels and backgrounds. Some of their activities include giving talks, hosting guest speakers, participating in rocket and experimental design competitions, and hosting star parties and solar viewings.
 
-### Dev Club
+### Dev Club ![](images/DevClubLogo.png)
 Founded by Raphael Cenzano and Cappillen Lee, Lowell Dev Club is a place where anyone can be engaged in the world of computer science. They are focused on teaching high school students how to code using workshops, mentoring, and creating a focused space for students to explore computer science and work on cool projects! You can find out more about their club at www.lowelldev.club, and learn about their parent organization at www.hackclub.com.
 
 ### EECS (Electrical Engineering and Computer Science) Club

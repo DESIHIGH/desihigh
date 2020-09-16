@@ -43,7 +43,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/TheTest/README.md) and [graduate](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Graduation/README.md) from DESI High!
 
-:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of researchers from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a scientist:">started for you</a>!  Meet one of our [existing partner schools](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/Partners/Lowell) :earth_africa:. 
+:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of scientists from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a scientist:">started for you</a>!  Meet one of our [existing partner schools](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/Partners/Lowell) :earth_africa:. 
 
 :computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 

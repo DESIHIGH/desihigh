@@ -1,4 +1,4 @@
-# DESI High :school_satchel:
+# DESI High: School of the Dark Universe  :school_satchel:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.1.0)
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)

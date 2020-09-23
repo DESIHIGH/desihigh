@@ -54,7 +54,5 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 </p>
 <p float="left">
   <img src="./images/BATS.png",           width=200>
-</p>
-<p float="left">
   <img src="./images/LBL.png", width=250>
 </p>

@@ -15,6 +15,13 @@ Having grown up watching *Star Wars* and reading *The Hitchhiker's Guide to the 
 
 During LBNL's Physics 'In and Through Cosmology Workshop' in the summer of 2020, she met some of the very scientists dedicating their lives to answering those questions, including those working on DESI. When she found out about DESI High, she couldn't wait to share it with her peers. Its connections to current ongoing research about dark energy brought her closer than ever to finding answers to her questions. To this day, she still lies awake at night thinking about the many unsolved mysteries of the universe!
 
+### Kathleen West, Staff Ambassador at DESI High
+“The opportunity DESI high provides all science students to work with real-world data, alongside scientists in the field, 
+is a dream come true for me.  DESI High is a unique chance for ALL students to access the world of academic research
+and collaborative science at work.  I am thrilled that our students have a chance to put their learning to the test, while
+also being given scaffolds to increase their skills in science and coding. The level of interest and engagement DESI
+has generated has been wonderful to see.”
+
 ### Astronomy Club
 Lowell's Astronomy Club was founded in the fall of 2019 by Emma Yu and Stefanie Garcia with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Since then, Astronomy Club has grown to over forty members from all grade-levels and backgrounds. Some of their activities include giving talks, hosting guest speakers, participating in rocket and experimental design competitions, and hosting star parties and solar viewings.
 

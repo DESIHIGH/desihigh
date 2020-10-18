@@ -28,7 +28,8 @@ has generated has been wonderful to see.”
 <img align="right" src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/bernice.jpg" height=220><img align="right" src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/stefanie.jpg" height=220><img align="right" src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/astronomyLogo.jpg" height=220>
 
 ### Astronomy Club
-Lowell's Astronomy Club was founded in the fall of 2019 by Emma Yu and Stefanie Garcia with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Since then, Astronomy Club has grown to over forty members from all grade-levels and backgrounds. Some of their activities include giving talks, hosting guest speakers, participating in rocket and experimental design competitions, and hosting star parties and solar viewings.
+Lowell's Astronomy Club was founded in the fall of 2019 by Emma Yu, Stefanie Garcia, and Bernice Lau with the goal of connecting their peers to exciting new opportunities to explore astrophysics and cosmology. Astronomy Club encourages students to collaborate and expand their curiosities by giving talks, hosting guest speakers, participating in rocket and experimental design competitions, and hosting star parties and solar viewings.
+
 
 <img align="left" src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/devLogo.png" height=260><img align="left" src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/rafael.jpg" height=260>
 ### Dev Club

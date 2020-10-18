@@ -44,3 +44,8 @@ Electrical Engineering & Computer Science (EECS) Club specializes in combining t
 <br/>
 <img src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/GWC_SEO_Logo.png" height=200><img src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/claire.JPG" height=200><img src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/reily.jpg" height=200><img src="https://github.com/eyu22/DESI-HighSchool/blob/master/Partners/Lowell/images/andrea.jpg" height=200>
 
+### Have questions for us?
+Feel free to email us at lowellastroclub@gmail.com!
+
+
+

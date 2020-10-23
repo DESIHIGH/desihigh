@@ -24,7 +24,7 @@
 
 :mexico:  ¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md) :es:
 
-**ATTENTION K12:  Join us at our Bay Area Science Festival event on Oct. 24th at 12.30pm PT 2020.  Register [here](https://www.bayareasciencefestival.org/)!**
+**ATTENTION K12:  [Join us](https://www.bayareasciencefestival.org/) at our Bay Area Science Festival event on Oct. 24th at 12.30pm PT 2020!**
 
 Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), try our [website](https://www.desi.lbl.gov) and sign up to our [Twitter feed](https://twitter.com/desisurvey)!
 

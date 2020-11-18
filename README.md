@@ -51,8 +51,8 @@ When you're done, don't forget to get some extra credit by leaving us with what 
   <img src="./images/BASF.jpg",           width=250>
   <img src="./images/JupyterCon20.png",   width=250>
   <img src="./images/CalStemNet.png",     width=300>
-  <img src="./images/BATS.png",           width=175>
   <img src="./images/Noche.png",          width=250>
+  <img src="./images/BATS.png",           width=175>
 </p>
 <p float="left">
   <img src="./images/LBL.png", width=250>

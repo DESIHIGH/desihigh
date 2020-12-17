@@ -17,3 +17,5 @@ dependencies:
   - pyephem
   - cryptography>=3.2
   - notebook>=6.1.5
+  - tensorflow
+  - scikit-learn

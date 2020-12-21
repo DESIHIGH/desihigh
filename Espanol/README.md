@@ -22,7 +22,7 @@ Cuando hayas terminado, no olvides obtener un crédito adicional diciéndonos lo
 
 
 <p float="left">
-  <img src="./images/BayScienceFest.png", width=250>
-  <img src="./images/JupyterCon20.png",   width=250>
-  <img src="./images/CalStemNet.png",     width=250>
+  <img src="../images/BayScienceFest.png", width=250>
+  <img src="../images/JupyterCon20.png",   width=250>
+  <img src="../images/CalStemNet.png",     width=250>
 </p>

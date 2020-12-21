@@ -1,6 +1,6 @@
 # DESI High :school_satchel:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.5)
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Join the chat at https://gitter.im/DESI-HighSchool/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/Lobby?utm_source=badge&utm_medium=badge&utm_content=badge)

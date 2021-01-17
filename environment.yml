@@ -19,3 +19,4 @@ dependencies:
   - notebook>=6.1.5
   - tensorflow
   - scikit-learn
+  - nbformat >=5.0.2

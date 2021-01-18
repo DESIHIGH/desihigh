@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]
@@ -55,5 +55,5 @@ When you're done, don't forget to get some extra credit by leaving us with what 
   <img src="desihigh/images/BATS.png",           width=175>
 </p>
 <p float="left">
-  <img src="./images/LBL.png", width=250>
+  <img src="desihigh/images/LBL.png", width=250>
 </p>

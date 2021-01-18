@@ -4,23 +4,23 @@
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]
 [![alt text][rimage]][rhyperlink]
 
 [thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
-[timage]: images/Twitter_buttonsize2.png
+[timage]: desihigh/images/Twitter_buttonsize2.png
 
 [fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
-[fimage]: images/Facebook_buttonsize.png
+[fimage]: desihigh/images/Facebook_buttonsize.png
 
 [ihyperlink]: https://instagram.com
-[iimage]: images/Instagram_buttonsize.png
+[iimage]: desihigh/images/Instagram_buttonsize.png
 
 [rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
-[rimage]: images/Reddit_buttonsize.png
+[rimage]: desihigh/images/Reddit_buttonsize.png
 
 :mexico:  **¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md)** :es:
 
@@ -48,12 +48,12 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 :computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 
 <p float="left">
-  <img src="./images/BASF.jpg",           width=250>
-  <img src="./images/JupyterCon20.png",   width=250>
-  <img src="./images/CalStemNet.png",     width=300>
-  <img src="./images/Noche.png",          width=250>
-  <img src="./images/BATS.png",           width=175>
+  <img src="desihigh/images/BASF.jpg",           width=250>
+  <img src="desihigh/images/JupyterCon20.png",   width=250>
+  <img src="desihigh/images/CalStemNet.png",     width=300>
+  <img src="desihigh/images/Noche.png",          width=250>
+  <img src="desihigh/images/BATS.png",           width=175>
 </p>
 <p float="left">
-  <img src="./images/LBL.png", width=250>
+  <img src="desihigh/images/LBL.png", width=250>
 </p>

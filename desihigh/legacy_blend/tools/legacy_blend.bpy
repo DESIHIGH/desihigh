@@ -1,0 +1,52 @@
+import bpy
+import numpy as np
+import glob
+import random
+
+root='/Users/MJWilson/DESIATHIGHSCHOOL/github/desi@HighSchool/'
+
+filename=root + '/dat/lrg_cat_pos.txt'  # enter the complete file path here
+f=open(filename,'r') # open file for reading
+arr=f.readlines()  # store the entire file in a variable
+f.close()
+
+# filepath = root + 'images/legacy/lrg.jpg'
+
+files      = glob.glob('/Users/MJWilson/Work/desi/legacy/docker/mjwilson/sers/*.jpg')
+
+to_clear   = ['MESH', 'CURVE', 'SURFACE', 'CAMERA', 'LAMP', 'SPEAKER']
+
+# clear the scene?
+# for obj in bpy.context.scene.objects:
+#    if obj.type in to_clear:
+#         obj.select = True
+#
+#    bpy.ops.object.delete()
+
+# Parse the array:
+for p in arr[:250]:
+     p0   = p.split(',')  # use colon as separator
+
+     Xpos = float(p0[0])
+     Ypos = float(p0[1])
+     Zpos = float(p0[2])
+     
+     filepath = random.choice(files)
+     
+     bpy.ops.import_image.to_plane(shader='EMISSION', files=[{'name':filepath}], location=(0, 0, 0), rotation=(0, 0, 0))
+
+     bpy.context.active_object.location[0]       = Xpos
+     bpy.context.active_object.location[1]       = Ypos
+     bpy.context.active_object.location[2]       = Zpos
+     
+     scale                                       = np.random.uniform(5,15,1)
+     
+     bpy.context.active_object.scale[0]          = scale
+     bpy.context.active_object.scale[1]          = scale
+
+     # Planar: 0 x N = 0.
+     # bpy.data.objects[-1].scale[2]             = np.random.uniform(10,100,1)
+     
+     bpy.context.active_object.rotation_euler[0] = np.random.uniform(0,90,1)
+     bpy.context.active_object.rotation_euler[1] = np.random.uniform(0,90,1)
+     bpy.context.active_object.rotation_euler[2] = np.random.uniform(0,90,1)

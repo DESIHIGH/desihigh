@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
 [![Join the chat at https://gitter.im/DESI-HighSchool/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/Lobby?utm_source=badge&utm_medium=badge&utm_content=badge)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 
 ¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento espectroscópico de energía oscura (DESI, Dark Energy spectroscopic Instrumet). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), y visita nuestro [sitio web](www.desi.lbl.gov).
 

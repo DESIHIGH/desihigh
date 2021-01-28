@@ -2,7 +2,6 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 [![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=master)](https://travis-ci.com/michaelJwilson/desihigh)
-<[![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)>
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]

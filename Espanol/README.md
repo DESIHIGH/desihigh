@@ -1,10 +1,26 @@
 # DESI High :school_satchel:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
-[![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
+[![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=master)](https://travis-ci.com/michaelJwilson/desihigh)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
-[![Join the chat at https://gitter.im/DESI-HighSchool/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DESI-HighSchool/Lobby?utm_source=badge&utm_medium=badge&utm_content=badge)
+[![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
+[![alt text][timage]][thyperlink]
+[![alt text][iimage]][ihyperlink]
+[![alt text][fimage]][fhyperlink]
+[![alt text][rimage]][rhyperlink]
+
+[thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
+[timage]: desihigh/images/Twitter_buttonsize2.png
+
+[fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
+[fimage]: desihigh/images/Facebook_buttonsize.png
+
+[ihyperlink]: https://instagram.com
+[iimage]: desihigh/images/Instagram_buttonsize.png
+
+[rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
+[rimage]: desihigh/images/Reddit_buttonsize.png
 
 ¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento espectroscópico de energía oscura (DESI, Dark Energy spectroscopic Instrumet). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), y visita nuestro [sitio web](www.desi.lbl.gov).
 

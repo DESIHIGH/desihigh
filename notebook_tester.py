@@ -39,8 +39,14 @@ pm.execute_notebook(
 )
 
 pm.execute_notebook(
-   './SupernovaeBrain.ipynb.ipynb',
+   './SupernovaeBrain.ipynb',
    'desihigh/pmout/SupernovaeBrain.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)
+
+pm.execute_notebook(
+   './nbody.ipynb',
+   'desihigh/pmout/nbody.ipynb',
    parameters=dict(alpha=0.6, ratio=0.1)
 )
 
@@ -84,6 +90,12 @@ pm.execute_notebook(
 
 pm.execute_notebook(                                                                                                                                                                                                                      
    './SupernovaeBrain_es.ipynb',                                                                                                                                                                                                     
-   '../desihigh/pmout/SupernovaeBrain_es.ipynb',                                                                                                                                                                                              
+   '../desihigh/pmout/SupernovaeBrain_es.ipynb',                                                                                                                                                                                         
    parameters=dict(alpha=0.6, ratio=0.1)
 )            
+
+pm.execute_notebook(
+   './nbody_es.ipynb',
+   '../desihigh/pmout/nbody_es.ipynb',
+   parameters=dict(alpha=0.6, ratio=0.1)
+)

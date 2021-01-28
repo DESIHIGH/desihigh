@@ -38,7 +38,12 @@ Cuando hayas terminado, no olvides obtener un crédito adicional diciéndonos lo
 
 
 <p float="left">
-  <img src="../desihigh/images/BayScienceFest.png", width=250>
+  <img src="../desihigh/images/BASF.jpg",           width=250>
   <img src="../desihigh/images/JupyterCon20.png",   width=250>
-  <img src="../desihigh/images/CalStemNet.png",     width=250>
+  <img src="../desihigh/images/CalStemNet.png",     width=300>
+  <img src="../desihigh/images/Noche.png",          width=250>
+  <img src="../desihigh/images/BATS.png",           width=175>
+</p>
+<p float="left">
+  <img src="../desihigh/images/LBL.png", width=250>
 </p>

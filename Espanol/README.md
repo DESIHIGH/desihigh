@@ -11,16 +11,16 @@
 [![alt text][rimage]][rhyperlink]
 
 [thyperlink]: https://twitter.com/intent/tweet?text=Wow!%20Unbelievable%20what's%20possible%20at%20@desisurvey's%20DESI%20High.%20%20Can't%20wait%20to%20get%20started!%0Dhttps://github.com/michaelJwilson/DESI-HighSchool/
-[timage]: desihigh/images/Twitter_buttonsize2.png
+[timage]: ../desihigh/images/Twitter_buttonsize2.png
 
 [fhyperlink]: https://www.facebook.com/sharer.php?s=100&p[url]=github.com%2FmichaelJwilson%2FDESI-HighSchool&p[title]=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
-[fimage]: desihigh/images/Facebook_buttonsize.png
+[fimage]: ../desihigh/images/Facebook_buttonsize.png
 
 [ihyperlink]: https://instagram.com
-[iimage]: desihigh/images/Instagram_buttonsize.png
+[iimage]: ../desihigh/images/Instagram_buttonsize.png
 
 [rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
-[rimage]: desihigh/images/Reddit_buttonsize.png
+[rimage]: ../desihigh/images/Reddit_buttonsize.png
 
 ¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento espectroscópico de energía oscura (DESI, Dark Energy spectroscopic Instrumet). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), y visita nuestro [sitio web](www.desi.lbl.gov).
 

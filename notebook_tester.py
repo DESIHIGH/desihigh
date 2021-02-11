@@ -19,5 +19,5 @@ class TestSuite(object):
                     '{}/{}{}.ipynb'.format(tmpdir, nb, lang),
                     parameters=dict(alpha=0.6, ratio=0.1)
                 )
-
+                
             os.chdir('./Espanol/')

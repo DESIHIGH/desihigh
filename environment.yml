@@ -22,3 +22,6 @@ dependencies:
   - tensorflow
   - scikit-learn
   - nbformat >=5.0.2
+  - coveralls
+  - pytest
+  - pytest-cov

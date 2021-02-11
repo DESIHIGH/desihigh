@@ -18,5 +18,3 @@ class TestSuite(object):
                 '{}/{}.ipynb'.format(tmpdir, nb),
                 parameters=dict(alpha=0.6, ratio=0.1)
             )
-
-            return 

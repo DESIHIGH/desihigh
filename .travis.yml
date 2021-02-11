@@ -22,4 +22,7 @@ install:
   - source activate test-environment
 
 script:
-  - python notebook_tester.py
+  - pytest -q notebook_tester.py 
+
+after_success:
+  - coveralls

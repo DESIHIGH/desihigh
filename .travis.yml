@@ -22,7 +22,9 @@ install:
   - source activate test-environment
 
 script:
-  - pytest -q notebook_tester.py --cov=.
+  - pytest -q --cov=. notebook_tester.py
+  - cd Espanol
+  - pytest -q --cov=. notebook_tester.py
 
 after_success:
   - coveralls

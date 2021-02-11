@@ -14,9 +14,9 @@ class TestSuite(object):
     def test_all(self, tmpdir):
         for nb in notebooks:
             pm.execute_notebook(
-                './{}.ipynb'.format(nb),
-                '{}/{}.ipynb'.format(tmpdir, nb),
+                './{}_es.ipynb'.format(nb),
+                '{}/{}_es.ipynb'.format(tmpdir, nb),
                 parameters=dict(alpha=0.6, ratio=0.1)
             )
 
-            return 
+            return

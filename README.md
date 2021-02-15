@@ -53,6 +53,8 @@ When you're done, don't forget to get some extra credit by leaving us with what 
   <img src="desihigh/images/CalStemNet.png",     width=300>
   <img src="desihigh/images/Noche.png",          width=250>
   <img src="desihigh/images/BATS.png",           width=175>
+  <img src="desihigh/images/NCFest.png",         width=175>
+  <img src="desihigh/images/camscifest.png",     width=175>
 </p>
 <p float="left">
   <img src="desihigh/images/LBL.png", width=250>

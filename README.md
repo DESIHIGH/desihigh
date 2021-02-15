@@ -51,7 +51,7 @@ When you're done, don't forget to get some extra credit by leaving us with what 
   <img src="desihigh/images/BASF.jpg",           width=250>
   <img src="desihigh/images/JupyterCon20.png",   width=250>
   <img src="desihigh/images/CalStemNet.png",     width=300>
-  <img src="desihigh/images/Noche.png",          width=250>
+  <img src="desihigh/images/Noche.png",          width=275>
   <img src="desihigh/images/BATS.png",           width=175>
   <img src="desihigh/images/NCFest.png",         width=125>
   <img src="desihigh/images/camscifest.png",     width=150>

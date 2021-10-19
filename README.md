@@ -1,10 +1,10 @@
 # DESI High: School of the Dark Universe
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
-[![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=master)](https://travis-ci.com/michaelJwilson/desihigh)
-[![Coverage Status](https://coveralls.io/repos/github/michaelJwilson/desihigh/badge.svg?branch=master)](https://coveralls.io/github/michaelJwilson/desihigh?branch=master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/main)
+[![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=main)](https://travis-ci.com/michaelJwilson/desihigh)
+[![Coverage Status](https://coveralls.io/repos/github/michaelJwilson/desihigh/badge.svg?branch=main)](https://coveralls.io/github/michaelJwilson/desihigh?branch=master)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]
@@ -22,16 +22,16 @@
 [rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
 [rimage]: desihigh/images/Reddit_buttonsize.png
 
-:mexico:  **¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Espanol/README.md)** :es:
+:mexico:  **¡Hola! Para nuestros amigos de habla hispana, querrá consultar [README](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/Espanol/README.md)** :es:
 
 Welcome to DESI High!  :school_satchel: You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by [Binder](https://mybinder.readthedocs.io/en/latest/).  Here you can join us and run your own experiments with hot-off-the-telescope DESI data :telescope:  For a great introduction to the DESI project, start with this [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), try our [website](https://www.desi.lbl.gov) and sign up to our [Twitter feed](https://twitter.com/desisurvey)!
 
-If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/cheatsheets) directory close by to provide some handy summaries of the basics.
+If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You can try this [book](https://www.py4e.com/book) to get started and be sure to keep our [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/main/cheatsheets) directory close by to provide some handy summaries of the basics.
 
 Everything here is written in [Jupyter notebooks](https://jupyter.org/), which makes all things easy when it comes python and data science.  You can read all about them [here](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
 If you get stuck with a python question, be like the pros and try www.google.com!  :thought_balloon: If you have a science question,
-leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/CODE_OF_CONDUCT.md) :scroll:.  
+leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by [donating](berkeleylabfoundation.org/support) a few :dollar: to our support programs for the underprivileged, but make sure to convince your parents first!
 
@@ -41,9 +41,9 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 
 :whale:  For budding developers, we support [Docker](https://hub.docker.com/r/mjwilsonlbl/desihigh), [Travis CI](https://travis-ci.com/github/michaelJwilson/DESI-HighSchool) and [Anaconda Cloud](https://anaconda.org/michaeljwilson/desi-high) :cloud:. 
 
-:mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/TheTest/README.md) and [graduate](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/Graduation/README.md) from DESI High!
+:mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/TheTest/README.md) and [graduate](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/Graduation/README.md) from DESI High!
 
-:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of scientists from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a scientist:">started for you</a>!  Meet one of our [existing partner schools](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/Partners/Lowell) :earth_africa:. 
+:school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of scientists from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a scientist:">started for you</a>!  Meet one of our [existing partner schools](https://github.com/michaelJwilson/DESI-HighSchool/tree/main/Partners/Lowell) :earth_africa:. 
 
 :computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 

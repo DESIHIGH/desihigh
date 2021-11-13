@@ -32,8 +32,8 @@ Everything here is written in [Jupyter notebooks](https://jupyter.org/), which m
 
 :rotating_light::rotating_light:  *We're almost ready to get started.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll know the basics and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.6)!* :rotating_light::rotating_light:
 
-If you get stuck with a python question, be like the pros and try www.google.com!  :thought_balloon: If you have a science question,
-leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
+If you get stuck with python, join the pros and try www.google.com!  :thought_balloon: If you have a science question,
+leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 
 When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.
 
@@ -44,8 +44,6 @@ When you're done, don't forget to get some extra credit by leaving us with what 
 :mortar_board:  If you've studied all there is to know, it may be time to take [The Test](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/TheTest/README.md) and [graduate](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/Graduation/README.md) from DESI High!
 
 :school:  Have a classroom full of students potentially interested in DESI High?  We have an elite team of scientists from across the globe ready to get things   <a href="mailto:desihighinitiative@gmail.com?subject=Meet a scientist:">started for you</a>!  Meet one of our [existing partner schools](https://github.com/michaelJwilson/DESI-HighSchool/tree/main/Partners/Lowell) :earth_africa:. 
-
-:computer:  Know someone who would love this but doesn't have access?  Ask about our <a href="mailto:desihighinitiative@gmail.com?subject=Paper Binder:">paper Binder</a> and <a href="mailto:desihighinitiative@gmail.com?subject=Loaner laptop:">loaner laptop </a> (for the Bay Area) programs.  
 
 <p float="left">
   <img src="desihigh/images/BASF.jpg",           width=250>

@@ -33,7 +33,7 @@ Everything here is written in [Jupyter notebooks](https://jupyter.org/), which m
 If you get stuck with a python question, be like the pros and try www.google.com!  :thought_balloon: If you have a science question,
 leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 
-When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by [donating](berkeleylabfoundation.org/support) a few :dollar: to our support programs for the underprivileged, but make sure to convince your parents first!
+When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by [donating](berkeleylabfoundation.org/support) a few :dollar: to our support programs, but make sure to convince your parents first!
 
 :rotating_light:  We're almost ready to go.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll be a pro and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.6)! :rotating_light:
 

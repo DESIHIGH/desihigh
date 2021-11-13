@@ -30,12 +30,12 @@ If you're new to python :snake:, don't worry!  You'll pick it up quickly.  You c
 
 Everything here is written in [Jupyter notebooks](https://jupyter.org/), which makes all things easy when it comes python and data science.  You can read all about them [here](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
 
-:rotating_light::rotating_light::rotating_light:  *We're almost ready to get started.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll know the basics and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.6)!* :rotating_light::rotating_light::rotating_light:
+:rotating_light::rotating_light:  *We're almost ready to get started.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll know the basics and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.6)!* :rotating_light::rotating_light:
 
 If you get stuck with a python question, be like the pros and try www.google.com!  :thought_balloon: If you have a science question,
 leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll be happy to help answer them.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 
-When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.  You can show even more support by [donating](berkeleylabfoundation.org/support) a few :dollar: to our support programs, but make sure to convince your parents first!
+When you're done, don't forget to get some extra credit by leaving us with what you [liked](https://forms.gle/LGKMVamrtS5StSv56) :star:.
 
 :heart: what you see?  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.  If you've created your own, we'd love to see them!  Try ["your first commit"](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498), or just [tell us all about it](https:/www.github.com/michaelJwilson/DESI-HighSchool/issues/new).
 

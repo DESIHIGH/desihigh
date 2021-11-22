@@ -35,7 +35,7 @@ Everything here is written in [Jupyter notebooks](https://jupyter.org/), which m
 If you get stuck with python, join the pros and try www.google.com!  :thought_balloon: If you have a science question,
 leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 
-Special thanks to @alxogm, 
+Special thanks to [@alxogm](https://github.com/alxogm), 
 
 :heart: what you see?  Earn extra credit by telling us your favourite part of [DESI High](https://forms.gle/LGKMVamrtS5StSv56) :star:.  Find out about [watching](https://docs.github.com/en/enterprise/2.20/user/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories#watching-a-single-repository) repositories and you'll get an update when we add new experiments.  If you've created your own, we'd love to see them!  Try ['your first commit'](https://www.medium.com/@haydar_ai/learning-how-to-git-creating-your-first-commit-c753ed2e7498).
 

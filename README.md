@@ -32,6 +32,7 @@ Everything here is written in [Jupyter notebooks](https://jupyter.org/), which m
 
 :rotating_light::rotating_light:  *We're almost ready to get started.  You'll first see a loading page, after which you'll want Intro.ipynb and then DESI.ipynb.  By that stage you'll know the basics and can try the rest - SnowWhiteDwarf is one of our favourites.  Ok, wait for it, [GO](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/1.2.6)!* :rotating_light::rotating_light:
 
+
 If you get stuck with python, join the pros and try www.google.com!  :thought_balloon: If you have a science question,
 leave us a [message](https://github.com/michaelJwilson/DESI-HighSchool/issues/new/) and we'll get back to you.  But remember, all staff and students at DESI High abide by the [Code of Conduct](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/CODE_OF_CONDUCT.md) :scroll:.  
 

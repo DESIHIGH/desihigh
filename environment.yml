@@ -12,7 +12,6 @@ dependencies:
   - pandas
   - astropy
   - scipy
-  - Pillow
   - fitsio
   - papermill
   - jupyter

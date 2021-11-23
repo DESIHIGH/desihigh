@@ -1,9 +1,9 @@
 # DESI High :school_satchel:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
-[![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=master)](https://travis-ci.com/michaelJwilson/desihigh)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/main)
+[![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=main)](https://travis-ci.com/michaelJwilson/desihigh)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/main/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]
@@ -23,7 +23,7 @@
 
 ¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento espectroscópico de energía oscura (DESI, Dark Energy spectroscopic Instrumet). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), y visita nuestro [sitio web](https://www.desi.lbl.gov).
 
-Si eres nuevo en python :snake:, ¡no te preocupes! Lo captarás rápidamente. Puedes usar este [tutorial](https://docs.python.org/es/3/tutorial/index.html), o [este](https://j2logo.com/python/tutorial/) en español para comenzar ( o bien este [libro](https://www.py4e.com/book) en inglés)  y asegúrate de mantener cerca nuestros [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/master/Espanol/acordeones), para consultar algunos resúmenes útiles de los conceptos básicos.
+Si eres nuevo en python :snake:, ¡no te preocupes! Lo captarás rápidamente. Puedes usar este [tutorial](https://docs.python.org/es/3/tutorial/index.html), o [este](https://j2logo.com/python/tutorial/) en español para comenzar ( o bien este [libro](https://www.py4e.com/book) en inglés)  y asegúrate de mantener cerca nuestros [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/main/Espanol/acordeones), para consultar algunos resúmenes útiles de los conceptos básicos.
 
 Todo aquí está escrito en cuadernos de Jupyter, lo que facilita todo cuando se trata de Python y ciencia de datos. Puedes leer todo sobre ellos [aquí (en inglés)](https://www.dataquest.io/blog/jupyter-notebook-tutorial/), o [aquí (en español)](https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/jupyter-notebook/).
 

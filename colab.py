@@ -5,18 +5,18 @@ import subprocess
 from   google.colab import drive
 
 
-drive='/content/drive/'
+drivepath='/content/drive/'
 
 if 'COLAB_GPU' in os.environ:
     # 'Hmmm, seems you\'re not in colab :)  Try again later.'
-    drive.mount(drive, force_remount=True)
+    drive.mount(drivepath, force_remount=True)
 
-    mydrive = drive + '/MyDrive/'
+    mydrive = drivepath + '/MyDrive/'
     
     os.chdir(mydrive)
     
     try:
-        import desihigh
+        import  desihigh
         
     except:
         print('Failed to import desihigh; Cloning.')

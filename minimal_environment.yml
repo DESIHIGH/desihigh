@@ -1,4 +1,4 @@
-# conda env create -f environment.yml
+# conda env create -f minimal_environment.yml
 name: desihigh
 channels:
   - defaults
@@ -12,14 +12,7 @@ dependencies:
   - astropy
   - scipy
   - fitsio
-  - papermill
   - jupyter
   - pyephem
-  - cryptography>=3.2
   - notebook>=6.1.5
-  - tensorflow
-  - scikit-learn
   - nbformat >=5.0.2
-  - coveralls
-  - pytest
-  - pytest-cov

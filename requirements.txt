@@ -1,82 +1,85 @@
-argcomplete @ file:///tmp/build/80754af9/argcomplete_1618920853202/work
-argon2-cffi @ file:///home/conda/feedstock_root/build_artifacts/argon2-cffi_1590329924553/work
-astropy @ file:///tmp/build/80754af9/astropy_1629829214319/work
-async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
-attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
-backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
-bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
+argcomplete==1.12.3
+argon2-cffi==20.1.0
+astropy==4.3.1
+async-generator==1.10
+attrs==21.4.0
+backcall==0.2.0
+bleach==4.1.0
 Bottleneck==1.3.2
 certifi==2021.10.8
-cffi @ file:///opt/conda/conda-bld/cffi_1642701102775/work
-cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
-debugpy @ file:///tmp/build/80754af9/debugpy_1637091426235/work
-decorator @ file:///tmp/build/80754af9/decorator_1632776554403/work
-defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
+cffi==1.15.0
+cycler==0.11.0
+debugpy==1.5.1
+decorator==5.1.0
+defusedxml==0.7.1
 entrypoints==0.3
-fitsio @ file:///home/conda/feedstock_root/build_artifacts/fitsio_1639666590763/work
+fitsio==1.1.6
 fonttools==4.25.0
-importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1638529598726/work
-ipykernel @ file:///tmp/build/80754af9/ipykernel_1633545415328/work/dist/ipykernel-6.4.1-py3-none-any.whl
-ipython @ file:///tmp/build/80754af9/ipython_1635944172793/work
-ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
-ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1634143127070/work
-jedi @ file:///tmp/build/80754af9/jedi_1611333758854/work
-Jinja2 @ file:///tmp/build/80754af9/jinja2_1635780242639/work
-jsonschema @ file:///Users/ktietz/demo/mc3/conda-bld/jsonschema_1630511932244/work
+importlib-metadata==4.8.2
+ipykernel==6.4.1
+ipython==7.29.0
+ipython-genutils==0.2.0
+ipywidgets==7.6.5
+jedi==0.18.0
+Jinja2==3.0.2
+jsonschema==3.2.0
 jupyter==1.0.0
-jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1640335223713/work
-jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1616615302928/work
-jupyter-core @ file:///tmp/build/80754af9/jupyter_core_1636537035214/work
-jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
-jupyterlab-widgets @ file:///tmp/build/80754af9/jupyterlab_widgets_1609884341231/work
-kiwisolver @ file:///tmp/build/80754af9/kiwisolver_1612282414123/work
-MarkupSafe @ file:///tmp/build/80754af9/markupsafe_1621528142364/work
-matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1638289681807/work
-matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
-mistune @ file:///tmp/build/80754af9/mistune_1594373098390/work
+jupyter-client==7.1.0
+jupyter-console==6.4.0
+jupyter-core==4.9.1
+jupyterlab-pygments==0.1.2
+jupyterlab-widgets==1.0.0
+kiwisolver==1.3.1
+MarkupSafe==2.0.1
+matplotlib==3.5.0
+matplotlib-inline==0.1.2
+mistune==0.8.4
 mkl-fft==1.3.1
-mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-random==1.2.2
 mkl-service==2.4.0
 munkres==1.1.4
-nbclient @ file:///tmp/build/80754af9/nbclient_1614364831625/work
-nbconvert @ file:///opt/conda/conda-bld/nbconvert_1641309195684/work
-nbformat @ file:///tmp/build/80754af9/nbformat_1617383369282/work
-nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
-notebook @ file:///tmp/build/80754af9/notebook_1637161768398/work
-numexpr @ file:///tmp/build/80754af9/numexpr_1640704205123/work
-numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1634106693478/work
-olefile @ file:///Users/ktietz/demo/mc3/conda-bld/olefile_1629805411829/work
-packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+nbclient==0.5.3
+nbconvert==6.3.0
+nbformat==5.1.3
+nest-asyncio==1.5.1
+notebook==6.4.6
+numexpr==2.8.1
+numpy==1.21.2
+olefile==0.46
+packaging==21.3
 pandas==1.3.5
-pandocfilters @ file:///tmp/build/80754af9/pandocfilters_1605120451932/work
-parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
-pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
-pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+pandocfilters==1.4.3
+parso==0.8.3
+pexpect==4.8.0
+pickleshare==0.7.5
 Pillow==8.4.0
-prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1637050397234/work
-prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
-ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pip==21.2.2
+prometheus-client==0.12.0
+prompt-toolkit==3.0.20
+ptyprocess==0.7.0
+pycparser==2.21
 pyephem==3.7.6.0
-pyerfa @ file:///tmp/build/80754af9/pyerfa_1621560191196/work
-Pygments @ file:///tmp/build/80754af9/pygments_1629234116488/work
-pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
-pyrsistent @ file:///tmp/build/80754af9/pyrsistent_1636098896055/work
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pyerfa==2.0.0
+Pygments==2.10.0
+pyparsing==3.0.4
+pyrsistent==0.18.0
+python-dateutil==2.8.2
 pytz==2021.3
 PyYAML==6.0
-pyzmq @ file:///tmp/build/80754af9/pyzmq_1638434924971/work
-qtconsole @ file:///tmp/build/80754af9/qtconsole_1632739723211/work
-QtPy @ file:///tmp/build/80754af9/qtpy_1629397026935/work
-scipy @ file:///tmp/build/80754af9/scipy_1641536880743/work
-Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
-six @ file:///tmp/build/80754af9/six_1623709665295/work
+pyzmq==22.3.0
+qtconsole==5.1.1
+QtPy==1.10.0
+scipy==1.7.3
+Send2Trash==1.8.0
+setuptools==58.0.4
+six==1.16.0
 terminado==0.9.4
-testpath @ file:///tmp/build/80754af9/testpath_1624638946665/work
-tornado @ file:///tmp/build/80754af9/tornado_1606942283357/work
-traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
-typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/work
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+testpath==0.5.0
+tornado==6.1
+traitlets==5.1.1
+typing-extensions==3.10.0.2
+wcwidth==0.2.5
 webencodings==0.5.1
+wheel==0.37.1
 widgetsnbextension==3.5.1
-zipp @ file:///opt/conda/conda-bld/zipp_1641824620731/work
+zipp==3.7.0

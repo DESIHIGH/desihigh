@@ -13,9 +13,8 @@ if 'COLAB_GPU' in os.environ:
 
     mydrive = drivepath + '/MyDrive/'
     
-    sys.path.append(mydrive + '/desihigh/')
-    
     try:
+        os.chdir(mydrive + '/desihigh/')
         import  desihigh
         
     except:
@@ -23,16 +22,17 @@ if 'COLAB_GPU' in os.environ:
         os.chdir(mydrive)
         subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git', shell=True, check=True)    
         # subprocess.run('pip install -r desihigh/requirements.txt', shell=True, check=True)
-
+        
         try:
+            os.chdir(mydrive + '/desihigh/')
             import desihigh
 
         except:
-            emessage = 'Failed to setup colab.  Create a ticket at https://github.com/michaelJwilson/desihigh.git.'
+            emessage = 'Failed to setup colab. Create a ticket at https://github.com/michaelJwilson/desihigh.git.'
 
             raise RuntimeError(emessage)
-
-    os.chdir(mydrive+'/desihigh')
+            
+   sys.path.append(mydrive + '/desihigh/')
 
 def save_colab():
     if 'COLAB_GPU' in os.environ:

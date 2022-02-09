@@ -55,6 +55,7 @@ Special thanks to [@alxogm](https://github.com/alxogm), [@mmarianav](https://git
   <img src="desihigh/images/BATS.png",           width=175>
   <img src="desihigh/images/NCFest.png",         width=125>
   <img src="desihigh/images/camscifest.png",     width=150>
+  <img src="desihigh/images/womeninscience.png", width=150>
 </p>
 <p float="left">
   <img src="desihigh/images/LBL.png", width=275>

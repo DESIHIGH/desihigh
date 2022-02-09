@@ -57,8 +57,8 @@ Special thanks to [@alxogm](https://github.com/alxogm), [@mmarianav](https://git
   <img src="desihigh/images/camscifest.png",     width=150>
 </p>
 <p float="left">
-  <img src="desihigh/images/womeninscience.png"  width=250>
+  <img src="desihigh/images/LBL.png", width=275>
 </p>
 <p float="left">
-  <img src="desihigh/images/LBL.png", width=275>
+  <img src="desihigh/images/womeninscience.png"  width=250>
 </p>

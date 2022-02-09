@@ -2,12 +2,13 @@ import os
 import sys
 import subprocess
 
-from   google.colab import drive
-
 
 drivepath='/content/drive/'
 
 if 'COLAB_GPU' in os.environ:
+    from   google.colab import drive
+
+    
     # 'Hmmm, seems you\'re not in colab :)  Try again later.'
     drive.mount(drivepath, force_remount=True)
 

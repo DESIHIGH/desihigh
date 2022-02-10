@@ -14,6 +14,7 @@ if 'COLAB_GPU' in os.environ:
 
     mydrive = drivepath + '/MyDrive/'
     
+    sys.path.append(mydrive + '/desihigh/')
     os.chdir(mydrive)
     
     try:
@@ -33,7 +34,6 @@ if 'COLAB_GPU' in os.environ:
 
             raise RuntimeError(emessage)
 
-    sys.path.append(mydrive + '/desihigh/')
 
 def save_colab():
     if 'COLAB_GPU' in os.environ:

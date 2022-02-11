@@ -19,16 +19,8 @@ if 'COLAB_GPU' in os.environ:
     try:
         import  desihigh
         
-    except:
+    except Exception as EE:
         print('Failed to import desihigh; Cloning.')
-
-        print('rm -f colab.py')
-
-        subprocces.run('rm -f colab.py')
-        
-        print('wget -O colab.py https://raw.githubusercontent.com/michaelJwilson/desihigh/main/colab.py')
-        
-        subprocces.run('wget -O colab.py https://raw.githubusercontent.com/michaelJwilson/desihigh/main/colab.py')
 
         print('git clone https://github.com/michaelJwilson/desihigh.git --depth=1')
         

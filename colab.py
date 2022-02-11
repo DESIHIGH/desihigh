@@ -28,7 +28,9 @@ if 'COLAB_GPU' in os.environ:
         try:
             sys.path.append(mydrive + '/desihigh/')
             
-            import pubplot
+            import  pubplot
+
+            print('Successfully cloned DESI High to Google Drive.')
 
         except Exception as EE:
             emessage = f'Failed to setup DESI High @ colab.  Please create a ticket at https://github.com/michaelJwilson/desihigh.git and include:\n\n{EE}'

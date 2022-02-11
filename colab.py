@@ -13,8 +13,7 @@ if 'COLAB_GPU' in os.environ:
     drive.mount(drivepath, force_remount=True)
 
     mydrive = drivepath + '/MyDrive/'
-    
-    sys.path.append(mydrive + '/desihigh/')
+
     os.chdir(mydrive)
     
     try:
@@ -22,6 +21,8 @@ if 'COLAB_GPU' in os.environ:
         
     except:
         print('Failed to import desihigh; Cloning.')
+
+        subprocces.run('wget -O colab.py https://raw.githubusercontent.com/michaelJwilson/desihigh/main/colab.py')
 
         subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git --depth=1', shell=True, check=True)    
 

@@ -22,8 +22,12 @@ if 'COLAB_GPU' in os.environ:
     except:
         print('Failed to import desihigh; Cloning.')
 
+        print('wget -O colab.py https://raw.githubusercontent.com/michaelJwilson/desihigh/main/colab.py')
+        
         subprocces.run('wget -O colab.py https://raw.githubusercontent.com/michaelJwilson/desihigh/main/colab.py')
 
+        print('git clone https://github.com/michaelJwilson/desihigh.git --depth=1')
+        
         subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git --depth=1', shell=True, check=True)    
 
         try:
@@ -34,7 +38,7 @@ if 'COLAB_GPU' in os.environ:
             print('Successfully cloned DESI High to Google Drive.')
 
         except Exception as EE:
-            emessage = f'Failed to setup DESI High @ colab.  Please create a ticket at https://github.com/michaelJwilson/desihigh.git and include:\n\n{EE}'
+            emessage = f'Failed to setup DESI High @ colab.  Please create a ticket at https://github.com/michaelJwilson/desihigh.git and include:\n\n{EE}\n\n{}'.format(sys.path)
 
             raise  RuntimeError(emessage)
 

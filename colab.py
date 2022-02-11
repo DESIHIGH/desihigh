@@ -23,20 +23,17 @@ if 'COLAB_GPU' in os.environ:
     except:
         print('Failed to import desihigh; Cloning.')
 
-        subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git', shell=True, check=True)    
-        # subprocess.run('pip install -r desihigh/requirements.txt', shell=True, check=True)
+        subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git --depth=1', shell=True, check=True)    
 
         try:
-            import desihigh
+            sys.path.append(mydrive + '/desihigh/')
+            
+            import pubplot
 
-        except:
-            emessage = 'Failed to setup colab.  Create a ticket at https://github.com/michaelJwilson/desihigh.git.'
+        except Exception as EE:
+            emessage = f'Failed to setup DESI High @ colab.  Please create a ticket at https://github.com/michaelJwilson/desihigh.git and include:\n\n{EE}'
 
-            raise RuntimeError(emessage)
+            raise  RuntimeError(emessage)
 
-
-def save_colab():
-    if 'COLAB_GPU' in os.environ:
-        # drive.mount(drive, force_remount=True)
-
-        drive.flush_and_unmount()
+else:
+    print('It appears you are not on Google Colab (!)')

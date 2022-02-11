@@ -28,7 +28,7 @@ if 'COLAB_GPU' in os.environ:
         try:
             sys.path.append(mydrive + '/desihigh/')
             
-            import  pubplot
+            import  desihigh
 
             print('Successfully cloned DESI High to Google Drive.')
 

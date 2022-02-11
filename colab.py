@@ -26,7 +26,7 @@ if 'COLAB_GPU' in os.environ:
         subprocess.run('git clone https://github.com/michaelJwilson/desihigh.git --depth=1', shell=True, check=True)    
 
         try:
-            sys.path.append(mydrive + '/desihigh/')
+            sys.path.append(mydrive)
             
             import  desihigh
 

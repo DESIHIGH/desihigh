@@ -5,7 +5,7 @@ import subprocess
 
 drivepath='/content/drive/'
 
-if 'COLAB_GPU' in os.environ:
+if 'google.colab' in sys.modules:
     from   google.colab import drive
 
     

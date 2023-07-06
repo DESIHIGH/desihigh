@@ -69,7 +69,7 @@ PyYAML==6.0
 pyzmq==22.3.0
 qtconsole==5.1.1
 QtPy==1.10.0
-scipy==1.7.3
+scipy==1.10.0
 Send2Trash==1.8.0
 setuptools==58.0.4
 six==1.16.0

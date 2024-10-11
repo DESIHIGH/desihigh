@@ -1,5 +1,8 @@
 # DESI High :school_satchel:
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/DESIHIGH/desihigh/blob/main/Colab_es.ipynb)
+
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/main)
 [![Build Status](https://travis-ci.com/michaelJwilson/desihigh.svg?branch=main)](https://travis-ci.com/michaelJwilson/desihigh)
 [![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
@@ -21,7 +24,7 @@
 [rhyperlink]: http://reddit.com/submit?url=github.com%2FmichaelJwilson%2FDESI-HighSchool&title=Dark%20Energy%20Science%20with%20hot-off-the-telescope%20data!
 [rimage]: ../desihigh/images/Reddit_buttonsize.png
 
-¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento Espectroscópico de Energía Oscura (DESI, Dark Energy spectroscopic Instrument). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), visita nuestro [sitio web](https://www.desi.lbl.gov) y siguenos en [Twitter](https://twitter.com/desisurvey).
+¡Bienvenido a DESI High!  :school_satchel: Has encontrado cuadernos de introducción al Instrumento Espectroscópico de Energía Oscura (DESI, Dark Energy spectroscopic Instrument). Están diseñados para estudiantes de secundaria-preparatoria, y son amablemente hospedados por [Binder](https://mybinder.readthedocs.io/en/latest/) y [Colab](https://colab.research.google.com).  Aquí puedes unirte a nosotros y realizar tus propios experimentos con datos de DESI, recién extraídos del telescopio :telescope: . Para una excelente introducción al proyecto DESI comienza con este [video](https://www.youtube.com/watch?v=kPXx9tqyzYg), visita nuestro [sitio web](https://www.desi.lbl.gov) y siguenos en [Twitter](https://twitter.com/desisurvey).
 
 Si eres nuevo en python :snake:, ¡no te preocupes! Lo captarás rápidamente. Puedes usar este [tutorial](https://docs.python.org/es/3/tutorial/index.html), o [este](https://j2logo.com/python/tutorial/) en español para comenzar ( o bien este [libro](https://www.py4e.com/book) en inglés)  y asegúrate de mantener cerca nuestros [cheatsheets](https://github.com/michaelJwilson/DESI-HighSchool/tree/main/Espanol/acordeones), para consultar algunos resúmenes útiles de los conceptos básicos.
 

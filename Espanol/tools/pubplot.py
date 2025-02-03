@@ -41,15 +41,6 @@ def set_size(width=240, fraction=2):
     return  (fig_width_in, fig_height_in)
 
 
-plt.style.use(resource_filename('tools', 'style.mplstyle'))
-
-nice_fonts = {
-    "text.usetex": False,
-    "font.family": "serif",
-    "font.serif" : "Times New Roman",
-}
-
 plt.rcParams["figure.figsize"] = set_size()
 
-matplotlib.rcParams.update(nice_fonts)
 

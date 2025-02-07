@@ -1,9 +1,8 @@
 # DESI High: School of the Dark Universe
 
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/michaelJwilson/desihigh/blob/main/Colab.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
-[![Build Status](https://travis-ci.com/michaelJwilson/DESI-HighSchool.svg?branch=master)](https://travis-ci.com/michaelJwilson/DESI-HighSchool)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
-[![Anaconda-Server Badge](https://anaconda.org/michaeljwilson/desi-high/badges/version.svg)](https://anaconda.org/michaeljwilson/desi-high)
 ![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]

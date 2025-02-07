@@ -3,7 +3,7 @@
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/michaelJwilson/desihigh/blob/main/Colab.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaelJwilson/DESI-HighSchool/master)
 [![Documentation Status](https://readthedocs.org/projects/desi-highschool/badge/?version=latest)](https://desi-highschool.readthedocs.io/en/latest/?badge=latest)
-![Image of DESI](https://github.com/michaelJwilson/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
+![Image of DESI](https://github.com/desihigh/DESI-HighSchool/blob/master/desihigh/images/Mayall-Star-Trails.jpg)
 [![alt text][timage]][thyperlink]
 [![alt text][iimage]][ihyperlink]
 [![alt text][fimage]][fhyperlink]

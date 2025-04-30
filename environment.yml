@@ -8,6 +8,5 @@ dependencies:
   - pandas
   - astropy
   - scipy
-  - fitsio
   - jupyter
-  - pyephem
+

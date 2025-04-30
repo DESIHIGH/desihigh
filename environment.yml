@@ -1,26 +1,13 @@
-# conda env create -f environment.yml
 name: desihigh
 channels:
-  - defaults
   - conda-forge
 dependencies:
-  - pip
-  - wget 
+  - python=3.11
   - numpy
   - matplotlib
   - pandas
   - astropy
   - scipy
   - fitsio
-  - papermill
   - jupyter
   - pyephem
-  - cryptography>=3.2
-  - notebook>=6.1.5
-  - tensorflow
-  - scikit-learn
-  - nbformat >=5.0.2
-  - coveralls
-  - pytest
-  - pytest-cov
-  - sparclclient

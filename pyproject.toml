@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desihigh"
+description = "A Python package for high-school students to learn about DESI."
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICEN[CS]E.*"]
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "getdist",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.optional-dependencies]
+
+
+[project.urls]
+Homepage = "https://desihigh.github.io/desihigh/"
+Repository = "https://github.com/DESIHIGH/desihigh.git"
+Issues = "https://github.com/DESIHIGH/desihigh/issues"
+
+[tool.setuptools]
+packages = ["desihigh"]

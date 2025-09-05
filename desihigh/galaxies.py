@@ -24,9 +24,9 @@ def get_x_y_z_region(Om0=.315, H0=100):
     ra, dec, redshift = get_ra_dec_z_region()
 
     cosmology_model = FlatLambdaCDM(Om0=Om0, H0=H0)
-    distance = cosmology_model.comoving_distance(redshifts).value
+    distance = cosmology_model.comoving_distance(redshift).value
 
-    x, y, z = ra_dec_dist_to_xyz(ra, dec, redshift)
+    x, y, z = ra_dec_dist_to_xyz(ra, dec, distance)
 
     return x, y, z
 

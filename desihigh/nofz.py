@@ -5,8 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def generate_lss_nz(output_path = '../data/lss_catalogs_nz.pickle'):
-    
-    csm0 = FlatLambdaCDM(Om0=.315, H0=100)
+
+    H0 = 67.4
+    csm0 = FlatLambdaCDM(Om0=.315, H0=H0)
     
     bgs = Table.read('/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/BGS_ANY_clustering.dat.fits')
     elg = Table.read('/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/ELG_LOPnotqso_clustering.dat.fits')
@@ -18,7 +19,7 @@ def generate_lss_nz(output_path = '../data/lss_catalogs_nz.pickle'):
     lrg_Mlyr = csm0.comoving_distance(lrg['Z']).value * 3.26 # convert to Mlyr
     qso_Mlyr = csm0.comoving_distance(qso['Z']).value * 3.26 # convert to Mlyr
     
-    bins = np.linspace(0, 15280, 100)
+    bins = np.linspace(0, 15280/(H0/100), 100)
     
     bin_centers = bins[:-1] + np.diff(bins)/2
     

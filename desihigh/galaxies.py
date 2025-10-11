@@ -6,10 +6,20 @@ import fitsio
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-def get_ra_dec_z_region():
+def get_ra_dec_z_region(galaxy_file):
 
-    galaxies = np.fromfile('../data/DR1_BGS_sample_galaxies.BIN')
-    num_gals = 28284
+    """
+
+    galaxy_file: string
+        The path to a .BIN file containing the galaxies to be read in. 
+        The galaxies should be stored as a one dimesnional numpy array,
+        with target IDs followed by RA vaues followed by Dec values
+        followed by redshift.
+
+    """
+
+    galaxies = np.fromfile(galaxy_file)
+    num_gals = galaxies.shape[0]//4
 
     ra = galaxies[num_gals:2*num_gals]
 

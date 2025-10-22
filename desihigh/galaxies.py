@@ -5,12 +5,31 @@ def get_ra_dec_z_region(galaxy_file):
 
     """
 
+    Loads sky coordinate data for DESI galaxies in a user-specified path
+
+
+    parameters:
+    ---------------------------------------------------------------------
+
     galaxy_file: string
         The path to a .BIN file containing the galaxies to be read in. 
         The galaxies should be stored as a one dimesnional numpy array,
-        with target IDs followed by RA vaues followed by Dec values
+        with target IDs followed by R.A. vaues followed by Dec values
         followed by redshift.
 
+
+    returns:
+    ---------------------------------------------------------------------
+    
+    ra: numpy array of shape (N,)
+        The R.A. coordinates in degrees
+        
+    dec: numpy array of shape (N,)
+        The declination coordinates in degrees
+        
+    redshift: numpy array of shape (N,)
+        The redshift coordinates
+        
     """
 
     galaxies = np.fromfile(galaxy_file)
@@ -25,10 +44,49 @@ def get_ra_dec_z_region(galaxy_file):
     return ra, dec, redshift
 
 
-def get_x_y_z_region(Om0=.315, H0=100):
+def get_x_y_z_region(galaxy_file, Om0=.315, H0=100):
     
+    """
 
-    ra, dec, redshift = get_ra_dec_z_region()
+    Loads cartiesian coordinate data for DESI galaxies in a 
+    user-specified path. The coordinates are stored as RA-dec-redshift 
+    and are transformed to carteisan coordiantes with a user-specified
+    cosmology
+
+
+    parameters:
+    ---------------------------------------------------------------------
+
+    galaxy_file: string
+        The path to a .BIN file containing the galaxies to be read in. 
+        The galaxies should be stored as a one dimesnional numpy array,
+        with target IDs followed by R.A. vaues followed by Dec values
+        followed by redshift.
+
+    Om0: float
+        The ommega matter value for the specified cosmology. Defaults to 
+        0.315
+        
+    H0: float
+        The Hubble constant for the specified cosmology. Defaults to 100
+        km/s/Mpc
+
+
+    returns:
+    ---------------------------------------------------------------------
+    
+    x: numpy array of shape (N,)
+        The x coordinates in Mpc (or Mpc/h if H0=100)
+        
+    y: numpy array of shape (N,)
+        The y coordinates in Mpc (or Mpc/h if H0=100)
+        
+    z: numpy array of shape (N,)
+        The z coordinates in Mpc (or Mpc/h if H0=100)
+        
+    """
+    
+    ra, dec, redshift = get_ra_dec_z_region(galaxy_file)
 
     cosmology_model = FlatLambdaCDM(Om0=Om0, H0=H0)
     distance = cosmology_model.comoving_distance(redshift).value
@@ -38,6 +96,38 @@ def get_x_y_z_region(Om0=.315, H0=100):
     return x, y, z
 
 def ra_dec_dist_to_xyz(ra_degrees, dec_degrees, distance):
+
+    """
+
+    Transforms sky coordinates to cartesian coordinates
+
+
+    parameters:
+    ---------------------------------------------------------------------
+
+    ra_degrees: numpy array of shape (N,)
+        The R.A. coordinates in degrees
+        
+    dec_degrees: numpy array of shape (N,)
+        The declination coordinates in degrees
+        
+    distance: numpy array of shape (N,)
+        The distance coordinates in user-specified units
+
+
+    returns:
+    ---------------------------------------------------------------------
+    
+    x: numpy array of shape (N,)
+        The x coordinates in user-specified units
+        
+    y: numpy array of shape (N,)
+        The y coordinates in user-specified units
+        
+    z: numpy array of shape (N,)
+        The z coordinates in user-specified units
+        
+    """
 
     ra = ra_degrees*np.pi/180.
     

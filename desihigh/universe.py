@@ -73,7 +73,7 @@ def set_y_scale():
 
     """
 
-    Replaces negative y axis vlaues wiht positive values for a mirrored graph
+    Replaces negative y axis values with positive values for a mirrored graph
         
     """
     

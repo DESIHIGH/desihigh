@@ -242,3 +242,39 @@ def generate_lss_nz(output_path = '../data/lss_catalogs_nz.pickle',
     
     with open(output_path, 'wb') as file:
         pickle.dump((bin_centers, r_min, r_max, bgs_Mlyr_hist, lrg_Mlyr_hist, elg_Mlyr_hist, qso_Mlyr_hist), file)
+
+def generate_sample_fibers(
+    tile_path_petal_0 = '/global/cfs/cdirs/desi//public/dr1/spectro/redux/iron/tiles/pernight/153/20210504/coadd-0-153-20210504.fits',
+    output_path = '../data/fibers-153-20210504.fits',
+                           ):
+
+    """
+
+    Writes fiber info for a DESI tile to file. This data is used in the 
+    DESI Survey Overview notebook
+
+
+    parameters:
+    ---------------------------------------------------------------------
+
+    tile_path_petal_0: string
+        The path to the file that cotains the tile/fiber information for 
+        petal 0. The petal number in the file path should be denoted with 
+        the string '-0-'. Subsequent petals are read in automatically
+        
+    output_path: string
+        The path to a .FITS file that will save the combined tile/fiber 
+        info
+
+    """
+    # read the first petal
+    fiber_table =Table.read(tile_path_petal_0, hdu=1)
+    fiber_table=fiber_table['TARGETID', 'FIBER', 'FIBERASSIGN_X', 'FIBERASSIGN_Y', 'PETAL_LOC']
+    # read subsequent petals
+    for i in range(1,10):
+        current_petal = tile_path_petal_0.replace('-0-',f'-{i}-')
+        temp_fiber_table =Table.read(current_petal, hdu=1)
+        temp_fiber_table=temp_fiber_table['TARGETID', 'FIBER', 'FIBERASSIGN_X', 'FIBERASSIGN_Y', 'PETAL_LOC']
+        fiber_table = vstack([fiber_table, temp_fiber_table])
+
+    fiber_table.write(output_path)

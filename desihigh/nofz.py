@@ -1,23 +1,18 @@
 import matplotlib.pyplot as plt
+import numpy.typing as npt
 
-def get_sky_coverage_fraction (tracer):
-
+def get_sky_coverage_fraction (tracer: str):
     """
-
     Reports the sky coverage fraction for a DESI tracer in DR1
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    tracer: string
+    Parameters
+    ----------
+    tracer : string
         The DESI tracer. One of 'BGS', 'ELG', 'LRG', or 'QSO'
 
-
-    returns:
-    ---------------------------------------------------------------------
-    
-    return value : float
+    Returns
+    -------
+    float
         The DR1 sky coverage for the tracer
         
     """
@@ -40,23 +35,17 @@ def get_sky_coverage_fraction (tracer):
         # qso
         return (4644.2888 + 2604.7908) / 41252.95
 
-def plot_galaxy_distribution(bin_centers, histogram, label=None):
-
+def plot_galaxy_distribution(bin_centers: npt.ArrayLike, histogram: npt.ArrayLike, label: str=None):
     """
-
     Plots the n(r) distribution for a galaxy catalog as a histogram
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    bin_centers: array-like of shape (N,)
+    Parameters
+    ----------
+    bin_centers : array-like of shape (N,)
         The location of the bin centers
-
-    histogram: array-like of shape (N,)
+    histogram : array-like of shape (N,)
         The histogram values
-
-    label: string
+    label : string
         A label for the plot. Defaults to None.
         
     """

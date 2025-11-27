@@ -9,23 +9,19 @@ from astropy.cosmology import FlatLambdaCDM
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-def generate_tile_data(ra_output_file='../data/20210922_tiles_ra.BIN', 
-                       dec_output_file='../data/20210922_tiles_dec.BIN'):
-
+def generate_tile_data(ra_output_file: str='../data/20210922_tiles_ra.BIN', 
+                       dec_output_file: str='../data/20210922_tiles_dec.BIN'):
     """
+    Writes the locations of a night of DESI tiles to file. 
+    
+    The tiles are  hard-coded to the 2021-09-22 DESI observing plan. This data 
+    is used in the Mapping The Universe notebook.
 
-    Writes the locations of a night of DESI tiles to file. The tiles are 
-    hard-coded to the 2021-09-22 DESI observing plan. This data is used
-    in the Mapping The Universe notebook.
-
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    ra_output_file: string
+    Parameters
+    ----------
+    ra_output_file : string
         The path to a .BIN file that will save the R.A. coordinates.
-        
-    dec_output_file: string
+    dec_output_file : string
         The path to a .BIN file that will save the declination 
         coordinates.
 
@@ -52,56 +48,45 @@ def generate_tile_data(ra_output_file='../data/20210922_tiles_ra.BIN',
     np.array(declination).tofile(dec_output_file)
     
 
-def generate_DR1_BGS_sample(gals = '/global/cfs/cdirs/desi/public/dr1/vac/dr1/fastspecfit/iron/v2.1/catalogs/fastspec-iron-main-bright.fits',
-                            output_path = '../data/DR1_BGS_sample_galaxies.BIN',
-                            z_min = 0.15,
-                            z_max = 0.24,
-                            ra_min = 190.,
-                            ra_max = 200.,
-                            dec_min = -5.,
-                            dec_max = 5.,
+def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/dr1/fastspecfit/iron/v2.1/catalogs/fastspec-iron-main-bright.fits',
+                            output_path: str = '../data/DR1_BGS_sample_galaxies.BIN',
+                            z_min: float = 0.15,
+                            z_max: float = 0.24,
+                            ra_min: float = 190.,
+                            ra_max: float = 200.,
+                            dec_min: float = -5.,
+                            dec_max: float = 5.,
                             
                            ):
-
     """
-
-    Writes the locations of a region of DESI BGS galaxies of file. This 
-    data is used in the Mapping The Universe and Python Packages 
+    Writes the locations of a region of DESI BGS galaxies of file. 
+    
+    This data is used in the Mapping The Universe and Python Packages 
     notebooks.
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    gals: string
-        The path to the fastspec catalog that contains the galaxy 
-        information. Defaults to the v2.1 fastspec-iron-main-bright.fits
-        file on NERSC
-        
-    output_path: string
+    Parameters
+    ----------
+    gals : string
+        The path to the fastspec catalog that contains the galaxy information. 
+        Defaults to the v2.1 fastspec-iron-main-bright.fits file on NERSC     
+    output_path : string
         The path to a .BIN file that will save the galaxy coordinates
-
-    z_min: float
+    z_min : float
         The minimum redshift for the saved region of galaxies. Defaults 
         to 0.15
-
-    z_max: float
+    z_max : float
         The maximum redshift for the saved region of galaxies. Defaults 
         to 0.24
-
-    ra_min: float
+    ra_min : float
         The minimum R.A. for the saved region of galaxies. Defaults 
         to 190.
-
-    ra_max: float
+    ra_max : float
         The maximum R.A. for the saved region of galaxies. Defaults 
         to 200.
-
-    dec_min: float
+    dec_min : float
         The minimum dec. for the saved region of galaxies. Defaults 
         to -5.
-
-    dec_max: float
+    dec_max : float
         The maximum dec. for the saved region of galaxies. Defaults 
         to 5.
 
@@ -179,37 +164,29 @@ def generate_DR1_BGS_sample(gals = '/global/cfs/cdirs/desi/public/dr1/vac/dr1/fa
     region = np.array([out['TARGETID'], out['RA'], out['DEC'], out['Z']])
     region.tofile(output_path)
 
-def generate_lss_nz(output_path = '../data/lss_catalogs_nz.pickle',
-                   bgs_path='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/BGS_ANY_clustering.dat.fits',
-                   elg_path='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/ELG_LOPnotqso_clustering.dat.fits',
-                   lrg_path='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/LRG_clustering.dat.fits',
-                   qso_path='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/QSO_clustering.dat.fits',
+def generate_lss_nz(output_path: str = '../data/lss_catalogs_nz.pickle',
+                   bgs_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/BGS_ANY_clustering.dat.fits',
+                   elg_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/ELG_LOPnotqso_clustering.dat.fits',
+                   lrg_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/LRG_clustering.dat.fits',
+                   qso_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/QSO_clustering.dat.fits',
                    ):
-
     """
-
     Calculates the n(z) of DESI LSS catalogs and saves them to file.
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    output_path: string
+    Parameters
+    ----------
+    output_path : string
         The path to a .pickle file that will save the n(z) profile
-
-    bgs_path: string
+    bgs_path : string
         The path to a the BGS LSS catalog. Defaults to the v1.5 catalog
         on NERSC
-
-    elg_path: string
+    elg_path : string
         The path to a the ELG LSS catalog. Defaults to the v1.5 catalog
         on NERSC
-
-    lrg_path: string
+    lrg_path : string
         The path to a the LRG LSS catalog. Defaults to the v1.5 catalog
         on NERSC
-
-    qso_path: string
+    qso_path : string
         The path to a the QSO LSS catalog. Defaults to the v1.5 catalog
         on NERSC
         
@@ -244,27 +221,22 @@ def generate_lss_nz(output_path = '../data/lss_catalogs_nz.pickle',
         pickle.dump((bin_centers, r_min, r_max, bgs_Mlyr_hist, lrg_Mlyr_hist, elg_Mlyr_hist, qso_Mlyr_hist), file)
 
 def generate_sample_fibers(
-    tile_path_petal_0 = '/global/cfs/cdirs/desi//public/dr1/spectro/redux/iron/tiles/pernight/153/20210504/coadd-0-153-20210504.fits',
-    output_path = '../data/fibers-153-20210504.fits',
+    tile_path_petal_0: str = '/global/cfs/cdirs/desi//public/dr1/spectro/redux/iron/tiles/pernight/153/20210504/coadd-0-153-20210504.fits',
+    output_path: str = '../data/fibers-153-20210504.fits',
                            ):
-
     """
+    Writes fiber info for a DESI tile to file. 
+    
+    This data is used in the DESI Survey Overview notebook.
 
-    Writes fiber info for a DESI tile to file. This data is used in the 
-    DESI Survey Overview notebook
-
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    tile_path_petal_0: string
-        The path to the file that cotains the tile/fiber information for 
-        petal 0. The petal number in the file path should be denoted with 
-        the string '-0-'. Subsequent petals are read in automatically
-        
-    output_path: string
-        The path to a .FITS file that will save the combined tile/fiber 
-        info
+    Parameters
+    ----------
+    tile_path_petal_0 : string
+        The path to the file that cotains the tile/fiber information for petal 
+        0. The petal number in the file path should be denoted with the string 
+        '-0-'. Subsequent petals are read in automatically.
+    output_path : string
+        The path to a .FITS file that will save the combined tile/fiber info.
 
     """
     # read the first petal

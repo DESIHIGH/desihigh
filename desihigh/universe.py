@@ -1,30 +1,24 @@
 import numpy as np
+import numpy.typing as npt
 from scipy.interpolate import InterpolatedUnivariateSpline
 from matplotlib.ticker import FuncFormatter
 from matplotlib import pyplot as plt
+from astropy.cosmology import FlatLambdaCDM
 
-def get_age_and_size(model):
-
+def get_age_and_size(model: FlatLambdaCDM):
     """
+    Reports the cosmic time vs scale factor relation for a cosmological model.
 
-    Reports the cosmic time vs scale factor relation for a cosmological 
-    model
-
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    model: astropy.cosmology.FlatLambdaCDM
+    Parameters:
+    -----------
+    model : astropy.cosmology.FlatLambdaCDM
         The astropy cosmology model
 
-
-    returns:
-    ---------------------------------------------------------------------
-    
-    age_of_universe: numpy array of shape (1000,)
+    Returns
+    -------
+    age_of_universe : numpy array of shape (1000,)
         The cosmic time ranging from a redshift range of 0 to 100
-        
-    size_of_universe: numpy array of shape (1000,)
+    size_of_universe : numpy array of shape (1000,)
         The scale factor ranging from a redshift range of 0 to 100
         
     """
@@ -35,31 +29,23 @@ def get_age_and_size(model):
     
     return age_of_universe, size_of_universe
 
-def time_to_redshift(model, interp_redshift, time):
-
+def time_to_redshift(model: FlatLambdaCDM, interp_redshift: npt.ArrayLike, time: npt.ArrayLike):
     """
-
     Converts cosmic time to redshift, assuming a cosmological model
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    model: astropy.cosmology.FlatLambdaCDM
+    Parameters:
+    -----------
+    model : astropy.cosmology.FlatLambdaCDM
         The astropy cosmology model
-        
     interp_redshift: array-like of shape (N,)
-        The sampled redshifts used for interpolating time to redshift,
-        ordered by increasing redshift
-
+        The sampled redshifts used for interpolating time to redshift, ordered 
+        by increasing redshift
     time: array-like of shape (M,)
         The cosmic time that will be interpolated to redshift values
 
-
-    returns:
-    ---------------------------------------------------------------------
-    
-    return value: numpy arrayof shape (M,)
+    Returns
+    -------
+    numpy array of shape (M,)
         The interpolated redshifts
         
     """
@@ -70,42 +56,35 @@ def time_to_redshift(model, interp_redshift, time):
     return t_to_z(time)
 
 def set_y_scale():
-
     """
-
     Replaces negative y axis values with positive values for a mirrored graph
         
     """
     
     plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, p: f'{abs(x):.3g}'))
 
-def x_position_to_y_position(model, redshift_range, x_position):
-
+def x_position_to_y_position(model: FlatLambdaCDM, redshift_range: npt.ArrayLike, x_position: npt.ArrayLike):
     """
-
+    Generates y-axis locations given a-axis locations for an expansion history 
+    plot.
+    
     Generates y-axis positions for galaxies in a decorative plot of the 
     universe's expansion history, given the galaxies' x-axis positions
-    (cosmic time).
+    representing cosmic time.
 
-
-    parameters:
-    ---------------------------------------------------------------------
-
-    model: astropy.cosmology.FlatLambdaCDM
+    Parameters:
+    -----------
+    model : astropy.cosmology.FlatLambdaCDM
         The astropy cosmology model
-        
-    redshift_range: array-like of shape (N,)
-        The sampled redshifts used for interpolating time to redshift,
-        ordered by increasing redshift
+    redshift_range : array-like of shape (N,)
+        The sampled redshifts used for interpolating time to redshift, ordered 
+        by increasing redshift
+    x_position : array-like of shape (M,)
+        The x-axis locations on the galaxies on the graph, corresponding to 
+        cosmic time
 
-    x_position: array-like of shape (M,)
-        The x-axis locations on the galaxies on the graph, corresponding 
-        to cosmic time
-
-
-    returns:
-    ---------------------------------------------------------------------
-    
+    Returns
+    -------
     y_position: numpy array of shape (M,)
         The y-axis locations on the galaxies on the graph, corresponding 
         to a random spatial distribution

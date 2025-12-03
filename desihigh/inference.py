@@ -5,7 +5,7 @@ from getdist import plots, MCSamples
 
 # Functions to handle under-the-hood operations with getdist 
 
-def plot_chain(sample: MCSamples):
+def plot_chain(sample: MCSamples) -> tuple:
     """
     Plot the chain of values for each parameter.
 

@@ -2,15 +2,16 @@ import pickle
 import numpy as np
 import numpy.lib.recfunctions as rfn
 import fitsio
-from astropy.table import Table
+from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
-
 
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-def generate_tile_data(ra_output_file: str='../data/20210922_tiles_ra.BIN', 
-                       dec_output_file: str='../data/20210922_tiles_dec.BIN'):
+def generate_tile_data(
+    ra_output_file: str = '../data/20210922_tiles_ra.BIN', 
+    dec_output_file: str = '../data/20210922_tiles_dec.BIN',
+):
     """
     Writes the locations of a night of DESI tiles to file. 
     
@@ -19,14 +20,12 @@ def generate_tile_data(ra_output_file: str='../data/20210922_tiles_ra.BIN',
 
     Parameters
     ----------
-    ra_output_file : string
+    ra_output_file : str
         The path to a .BIN file that will save the R.A. coordinates.
-    dec_output_file : string
+    dec_output_file : str
         The path to a .BIN file that will save the declination 
         coordinates.
-
     """
-
     # right ascension coordinates of tiles for the 
     ra = [
        266.0, 261.4, 312.4, 317.0, 318.7, 321.7, 326.3, 327.6, 329.6, 333.0, 336.3, 337.7, 340.1, 
@@ -47,17 +46,16 @@ def generate_tile_data(ra_output_file: str='../data/20210922_tiles_ra.BIN',
     ra.tofile(ra_output_file)
     np.array(declination).tofile(dec_output_file)
     
-
-def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/dr1/fastspecfit/iron/v2.1/catalogs/fastspec-iron-main-bright.fits',
-                            output_path: str = '../data/DR1_BGS_sample_galaxies.BIN',
-                            z_min: float = 0.15,
-                            z_max: float = 0.24,
-                            ra_min: float = 190.,
-                            ra_max: float = 200.,
-                            dec_min: float = -5.,
-                            dec_max: float = 5.,
-                            
-                           ):
+def generate_DR1_BGS_sample(
+    gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/dr1/fastspecfit/iron/v2.1/catalogs/fastspec-iron-main-bright.fits',
+    output_path: str = '../data/DR1_BGS_sample_galaxies.BIN',
+    z_min: float = 0.15,
+    z_max: float = 0.24,
+    ra_min: float = 190.,
+    ra_max: float = 200.,
+    dec_min: float = -5.,
+    dec_max: float = 5.,
+):
     """
     Writes the locations of a region of DESI BGS galaxies of file. 
     
@@ -66,10 +64,10 @@ def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/d
 
     Parameters
     ----------
-    gals : string
+    gals : str
         The path to the fastspec catalog that contains the galaxy information. 
         Defaults to the v2.1 fastspec-iron-main-bright.fits file on NERSC     
-    output_path : string
+    output_path : str
         The path to a .BIN file that will save the galaxy coordinates
     z_min : float
         The minimum redshift for the saved region of galaxies. Defaults 
@@ -89,33 +87,39 @@ def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/d
     dec_max : float
         The maximum dec. for the saved region of galaxies. Defaults 
         to 5.
-
-    """
-        
+    """ 
     #Open the FastSpecFit VAC
-    
     with fitsio.FITS(gals) as full_catalog:
         
         print("reading data")
-        metadata = full_catalog[2]['TARGETID','Z','ZWARN','DELTACHI2','SPECTYPE','RA','DEC','BGS_TARGET', 'SURVEY', 'PROGRAM'
-                           ][:]
+        metadata = full_catalog[2][
+            'TARGETID',
+            'Z',
+            'ZWARN',
+            'DELTACHI2',
+            'SPECTYPE',
+            'RA',
+            'DEC',
+            'BGS_TARGET', 
+            'SURVEY', 
+            'PROGRAM',
+        ][:]
         specphot = full_catalog[1][
-                           'ABSMAG01_SDSS_R', 
-                          ][:]
+            'ABSMAG01_SDSS_R', 
+        ][:]
     
     
         catalog = rfn.merge_arrays([metadata, specphot], flatten=True, usemask=False)
-    
-        del metadata, specphot
+        del metadata, specphot # free memory
     
         print(len(catalog), "target observations read in")
         
         # Select BGS Bright galaxies
         select = np.where(
-                   (catalog['SPECTYPE']=='GALAXY') 
-                   & (catalog['SURVEY']=='main')
-                   & (catalog['PROGRAM']=='bright')
-                 )
+            (catalog['SPECTYPE']=='GALAXY') &
+            (catalog['SURVEY']=='main') &
+            (catalog['PROGRAM']=='bright')
+        )
         
         catalog=catalog[select]
             
@@ -128,13 +132,14 @@ def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/d
     
         # Impose survey region limits
         print("Imposing survey region limits")
-        select = np.where((catalog['Z']>z_min) 
-                        & (catalog['Z']<z_max) 
-                        & (catalog['RA']>ra_min)
-                        & (catalog['RA']<ra_max)
-                        & (catalog['DEC']>dec_min)
-                        & (catalog['DEC']<dec_max)
-                     )
+        select = np.where(
+            (catalog['Z']>z_min) &
+            (catalog['Z']<z_max) &
+            (catalog['RA']>ra_min) &
+            (catalog['RA']<ra_max) &
+            (catalog['DEC']>dec_min) &
+            (catalog['DEC']<dec_max)
+        )
     
         catalog=catalog[select]
         
@@ -143,8 +148,8 @@ def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/d
         #Quality cuts 
         #made to match Ross 2024, The Dark Energy Spectroscopic Instrument: Construction of Large-scale Structure Catalogs
         select = np.where(
-                   (catalog['ZWARN']==0) 
-                   & (catalog['DELTACHI2']>40) 
+            (catalog['ZWARN']==0)  &
+            (catalog['DELTACHI2']>40) 
         )   
         
         catalog=catalog[select]
@@ -152,46 +157,41 @@ def generate_DR1_BGS_sample(gals: str = '/global/cfs/cdirs/desi/public/dr1/vac/d
         print(len(catalog), "galaxies in final catalog")
             
         #save catalog
-        out=Table([catalog['TARGETID'],
-                   catalog['RA'],
-                   catalog['DEC'],
-                   catalog['Z'],
-                 
-                  ],
-                   
-                   names=['TARGETID','RA','DEC','Z',]
-                 )
+        out=Table(
+            [
+                catalog['TARGETID'],
+                catalog['RA'],
+                catalog['DEC'],
+                catalog['Z'],
+            ],
+            names=['TARGETID','RA','DEC','Z',]
+        )
     region = np.array([out['TARGETID'], out['RA'], out['DEC'], out['Z']])
     region.tofile(output_path)
 
-def generate_lss_nz(output_path: str = '../data/lss_catalogs_nz.pickle',
-                   bgs_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/BGS_ANY_clustering.dat.fits',
-                   elg_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/ELG_LOPnotqso_clustering.dat.fits',
-                   lrg_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/LRG_clustering.dat.fits',
-                   qso_path: str='/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/QSO_clustering.dat.fits',
-                   ):
+def generate_lss_nz(
+    output_path: str = '../data/lss_catalogs_nz.pickle',
+    bgs_path: str = '/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/BGS_ANY_clustering.dat.fits',
+    elg_path: str = '/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/ELG_LOPnotqso_clustering.dat.fits',
+    lrg_path: str = '/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/LRG_clustering.dat.fits',
+    qso_path: str = '/global/cfs/cdirs/desi/survey/catalogs/Y1/LSS/iron/LSScats/v1.5/QSO_clustering.dat.fits',
+):
     """
     Calculates the n(z) of DESI LSS catalogs and saves them to file.
 
     Parameters
     ----------
-    output_path : string
+    output_path : str
         The path to a .pickle file that will save the n(z) profile
-    bgs_path : string
-        The path to a the BGS LSS catalog. Defaults to the v1.5 catalog
-        on NERSC
-    elg_path : string
-        The path to a the ELG LSS catalog. Defaults to the v1.5 catalog
-        on NERSC
-    lrg_path : string
-        The path to a the LRG LSS catalog. Defaults to the v1.5 catalog
-        on NERSC
-    qso_path : string
-        The path to a the QSO LSS catalog. Defaults to the v1.5 catalog
-        on NERSC
-        
+    bgs_path : str
+        The path to a the BGS LSS catalog. Defaults to the v1.5 catalog on NERSC
+    elg_path : str
+        The path to a the ELG LSS catalog. Defaults to the v1.5 catalog on NERSC
+    lrg_path : str
+        The path to a the LRG LSS catalog. Defaults to the v1.5 catalog on NERSC
+    qso_path : str
+        The path to a the QSO LSS catalog. Defaults to the v1.5 catalog on NERSC
     """
-
     H0 = 67.4
     csm0 = FlatLambdaCDM(Om0=.315, H0=H0)
     
@@ -223,7 +223,7 @@ def generate_lss_nz(output_path: str = '../data/lss_catalogs_nz.pickle',
 def generate_sample_fibers(
     tile_path_petal_0: str = '/global/cfs/cdirs/desi//public/dr1/spectro/redux/iron/tiles/pernight/153/20210504/coadd-0-153-20210504.fits',
     output_path: str = '../data/fibers-153-20210504.fits',
-                           ):
+):
     """
     Writes fiber info for a DESI tile to file. 
     
@@ -231,11 +231,11 @@ def generate_sample_fibers(
 
     Parameters
     ----------
-    tile_path_petal_0 : string
-        The path to the file that cotains the tile/fiber information for petal 
-        0. The petal number in the file path should be denoted with the string 
-        '-0-'. Subsequent petals are read in automatically.
-    output_path : string
+    tile_path_petal_0 : str
+        The path to the file that cotains the tile/fiber information for petal 0. 
+        The petal number in the file path should be denoted with the string '-0-'. 
+        Subsequent petals are read in automatically.
+    output_path : str
         The path to a .FITS file that will save the combined tile/fiber info.
 
     """

@@ -2,28 +2,25 @@ import numpy as np
 import numpy.typing as npt
 from astropy.cosmology import FlatLambdaCDM
 
-FloatArray = npt.NDArray[np.float32]
-
-def get_ra_dec_z_region(galaxy_file: str):
+def get_ra_dec_z_region(galaxy_file: str) -> tuple:
     """
     Loads sky coordinate data for DESI galaxies in a user-specified path.
 
     Parameters
     ----------
-    galaxy_file: string
+    galaxy_file: str
         The path to a .BIN file containing the galaxies to be read in. The 
         galaxies should be stored as a one dimensional numpy array, with target 
         IDs followed by R.A. vaues followed by Dec values followed by redshift.
 
     Returns
     -------
-    ra : numpy array of shape (N,)
-        The R.A. coordinates in degrees  
-    dec : numpy array of shape (N,)
-        The declination coordinates in degrees   
-    redshift : numpy array of shape (N,)
-        The redshift coordinates
-        
+    ra : np.ndarray
+        Array of the R.A. coordinates in degrees, with shape (N,)
+    dec : np.ndarray
+        Array of the declination coordinates in degrees, with shape (N,)
+    redshift : np.ndarray
+        Array of the redshift coordinates, with shape (N,)
     """
 
     galaxies = np.fromfile(galaxy_file)
@@ -38,8 +35,7 @@ def get_ra_dec_z_region(galaxy_file: str):
     return ra, dec, redshift
 
 
-def get_x_y_z_region(galaxy_file: str, Om0: float = .315, H0: float = 100):
-    
+def get_x_y_z_region(galaxy_file: str, Om0: float = .315, H0: float = 100) -> tuple:
     """
     Loads cartiesian coordinate data for DESI galaxies in a user-specified path. 
     
@@ -48,7 +44,7 @@ def get_x_y_z_region(galaxy_file: str, Om0: float = .315, H0: float = 100):
 
     Parameters
     ----------
-    galaxy_file : string
+    galaxy_file : str
         The path to a .BIN file containing the galaxies to be read in.  The 
         galaxies should be stored as a one dimensional numpy array, with target 
         IDs followed by R.A. vaues followed by Dec values followed by redshift.
@@ -60,13 +56,12 @@ def get_x_y_z_region(galaxy_file: str, Om0: float = .315, H0: float = 100):
 
     Returns
     -------
-    x : numpy array of shape (N,)
-        The x coordinates in Mpc (or Mpc/h if H0=100) 
-    y : numpy array of shape (N,)
-        The y coordinates in Mpc (or Mpc/h if H0=100) 
-    z : numpy array of shape (N,)
-        The z coordinates in Mpc (or Mpc/h if H0=100)
-        
+    x : np.ndarray
+        Array of the x coordinates in Mpc (or Mpc/h if H0=100), with shape (N,)
+    y : np.ndarray
+        Array of the y coordinates in Mpc (or Mpc/h if H0=100), with shape (N,)
+    z : np.ndarray
+        Array of the z coordinates in Mpc (or Mpc/h if H0=100), with shape (N,)
     """
     
     ra, dec, redshift = get_ra_dec_z_region(galaxy_file)
@@ -78,40 +73,37 @@ def get_x_y_z_region(galaxy_file: str, Om0: float = .315, H0: float = 100):
 
     return x, y, z
 
-def ra_dec_dist_to_xyz(ra_degrees: FloatArray, dec_degrees: FloatArray, distance: FloatArray):
-
+def ra_dec_dist_to_xyz(
+    ra_degrees: np.ndarray, 
+    dec_degrees: np.ndarray, 
+    distance: np.ndarray,
+) -> tuple:
     """
     Transforms sky coordinates to cartesian coordinates
 
     Parameters
     ----------
-    ra_degrees : numpy array of shape (N,)
-        The R.A. coordinates in degrees
-    dec_degrees : numpy array of shape (N,)
-        The declination coordinates in degrees
-    distance : numpy array of shape (N,)
-        The distance coordinates in user-specified units
-
+    ra_degrees : np.ndarray
+        Array of the R.A. coordinates in degrees, with shape (N,)
+    dec_degrees : np.ndarray
+        Array of the declination coordinates in degrees, with shape (N,)
+    distance : np.ndarray
+        Array of the distance coordinates in user-specified units, with shape (N,)
     Returns
     -------
-    x : numpy array of shape (N,)
-        The x coordinates in user-specified units
-    y : numpy array of shape (N,)
-        The y coordinates in user-specified units 
-    z : numpy array of shape (N,)
-        The z coordinates in user-specified units
-        
+    x : np.ndarray
+        Array of the x coordinates in user-specified units, with shape (N,)
+    y : np.ndarray
+        Array of the y coordinates in user-specified units, with shape (N,)
+    z : np.ndarray
+        Array of the z coordinates in user-specified units, with shape (N,)
     """
 
     ra = ra_degrees*np.pi/180.
-    
     dec = dec_degrees*np.pi/180.
     
     x = distance*np.cos(ra)*np.cos(dec)
-    
     y = distance*np.sin(ra)*np.cos(dec)
-    
     z = distance*np.sin(dec)
         
     return x, y, z
-

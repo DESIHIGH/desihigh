@@ -12,8 +12,13 @@ version = "0.1.0"
 requires-python = ">=3.8"
 dependencies = [
     "numpy",
+    "scipy",
+    "pandas",
     "matplotlib",
+    "astropy",
+    "healpy",
     "getdist",
+    "numba",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -25,10 +30,12 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-
+filegen = [
+    "fitsio",
+]
 
 [project.urls]
-Homepage = "https://desihigh.github.io/desihigh/"
+Homepage = "https://desihigh.github.io"
 Repository = "https://github.com/DESIHIGH/desihigh.git"
 Issues = "https://github.com/DESIHIGH/desihigh/issues"
 

@@ -22,8 +22,20 @@ cd desihigh
 pip install .
 ```
 
+### Dependencies
+The `desihigh` package requires Python 3.7 or higher. The main dependencies are listed in the `pyproject.toml` file, and automatically installed when you install the package.
+Optional dependencies can be installed with the following command:
+
+```bash
+pip install desihigh[filegen]
+```
+
+> [!NOTE]
+> The `filegen` dependencies is only required to run the file generation scripts, not to run the notebooks.
+
 ### Usage
 The `desihigh` package provides various modules and functions used in the notebooks and exercises of the DESI High program.
+It also contains a few methods to re-generate the data files used in the notebooks, located in the `desihigh.generate_files` module.
 
 ## Repository Structure
 The repository is structured as follows:

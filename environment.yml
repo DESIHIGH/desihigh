@@ -11,4 +11,4 @@ dependencies:
   - jupyter
   - notebook
   - pip:
-    - git+https://github.com/DESIHIGH/desihigh.git@minimal
+    - git+https://github.com/DESIHIGH/desihigh.git

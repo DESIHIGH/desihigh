@@ -22,7 +22,7 @@ def load_subway_data(city: str):
         If the city is not supported.
     """
     if city.lower() == 'boston':
-        with open("../../data/subway_boston.yaml", 'r') as stream: # source of MBTA https://erikdemaine.org/maps/mbta/
+        with open("../../../data/subway_boston.yaml", 'r') as stream: # source of MBTA https://erikdemaine.org/maps/mbta/
             boston_dict = yaml.safe_load(stream)
 
         # Dictionary to store unique stations
@@ -41,9 +41,9 @@ def load_subway_data(city: str):
         coords_list = list(unique_stations.values()) # Extract the (longitude, latitude) pairs into a list
         data = np.array(coords_list) # Convert the list to a 2D NumPy array
     elif city.lower() == 'london':
-        data = np.genfromtxt("../../data/subway_london.csv",delimiter=',',skip_header=1,usecols=(1,2))[:, [1, 0]] # long first, lat second
+        data = np.genfromtxt("../../../data/subway_london.csv",delimiter=',',skip_header=1,usecols=(1,2))[:, [1, 0]] # long first, lat second
     elif city.lower() == 'paris':
-        data = np.genfromtxt('../../data/subway_paris.csv', delimiter=';', skip_header=1, usecols=(5,4,-1))
+        data = np.genfromtxt('../../../data/subway_paris.csv', delimiter=';', skip_header=1, usecols=(5,4,-1))
     else:
         raise ValueError("City not supported.")
     return data

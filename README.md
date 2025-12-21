@@ -5,7 +5,7 @@
 
 Welcome to DESI High ! This repository contains the code, ressources, notebooks and data used in the DESI High program, an initiative to teach high school students about the Dark Energy Spectrocopic Instrument ([DESI]((https://www.desi.lbl.gov/))) and cosmology in general.
 
-🚨 For more information about the DESI High program, or access to the notebooks, please visit the [DESI High website](https://desihigh.github.io/desihigh/).
+🚨 For more information about the DESI High program, or access to the notebooks, please visit the [DESI High website](https://desihigh.github.io/).
 
 ## Installation
 To install the `desihigh` package, you can use pip using the following command:

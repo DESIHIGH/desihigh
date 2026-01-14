@@ -8,6 +8,7 @@ dependencies:
   - pandas
   - astropy
   - scipy
+  - ipympl
   - jupyter
   - notebook
   - pip:

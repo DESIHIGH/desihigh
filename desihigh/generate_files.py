@@ -14,6 +14,9 @@ from getdist import plots, MCSamples
 from scipy.ndimage import gaussian_filter1d
 from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
+from PIL import Image
+from matplotlib.image import pil_to_array
+import healpy as hp
 
 from desispec.io import read_spectra
 from desispec.coaddition import coadd_cameras
@@ -468,3 +471,39 @@ def get_desi_chain(
         np.save(save_dir / 'desi_dr2_chain.npy', new_chain) # Save the new chain to a file
     
     return new_chain
+
+def generate_earth_healpix(image_path='../images/MTU-Earth.jpg', output_path='../data/earth_map_healpix.BIN', nside = 256):
+    """
+    Converts a image of Earth to a healpix grayscale representation. 
+    
+    Based on tutorial at https://www.zonca.dev/posts/2013-08-08-healpix-map-of-earth-using-healpy
+
+    Parameters
+    ----------
+    image_path : str
+        The path to an image file to convert to healpix 
+        representation.
+    output_path : str
+        The path to a .BIN file that will save the healpix pixel 
+        representation.
+    nside : int
+        The healpix pixelation NSIDE parameter. Defaults to 256
+    """
+
+    earth_array = pil_to_array(Image.open(image_path).convert("L"))
+
+    # grid of coorinates to sample from image
+    theta = np.linspace(0, np.pi, earth_array.shape[0])[:, None]
+    phi = np.linspace(-np.pi, np.pi, earth_array.shape[1])
+
+    # convert coordinates to pixels
+    pix = hp.ang2pix(nside, theta, phi)
+
+    # convert to healpix map
+    earth_healpix = np.zeros(hp.nside2npix(nside), dtype=np.float32)
+    earth_healpix[pix] = earth_array
+
+    # adjust grayscale to fit well with the gist_earth color map
+    earth_healpix = earth_healpix**(.75)
+
+    earth_healpix.tofile(output_path)

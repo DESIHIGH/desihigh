@@ -1,14 +1,23 @@
 # This file will contain all the functions created to generate the DESIHIGH files
 # Some of those functions might have hardcoded paths or parameters.
 
+import os
 import pickle
+from glob import glob
+
 import fitsio
 import numpy as np
 import numpy.lib.recfunctions as rfn
+from scipy.ndimage import gaussian_filter1d
 from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
 
-import os
+from desispec.io import read_spectra
+from desispec.coaddition import coadd_cameras
+from desispec.interpolation import resample_flux
+from desispec.resolution import Resolution
+import redrock.templates
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def generate_tile_data(
@@ -281,3 +290,110 @@ def gen_black_body(filename: str, save_to: str, shift: float = 0.3) -> None:
     stack = np.column_stack((wavelength, shifted_wavelength, flux))
     headers = "wavelength_nm, shifted_wavelength_nm, flux_Wm2nm1"
     np.savetxt(save_to, stack, delimiter=",", header=headers)
+
+def get_desi_spectrum(
+    targetid: int, 
+    specprod: str = 'iron', 
+    dir_from_prod: str = 'healpix/main/dark/21/2196', # DR1 example directory structure
+    smoothing_sigma: int = 1.0,
+    save_dir: str | None = None,
+):
+    """
+    Get the observed spectrum and best-fit redrock model for a given DESI target ID.
+    Requires to be run at NERSC in the desimodules environment with access to the DESI spectroscopic reduction products.
+    
+    Parameters:
+    -----------
+    targetid: int
+        The DESI target ID for which to retrieve the spectrum and model.
+    specprod: str, optional
+        The DESI spectroscopic reduction product (e.g., 'iron', 'fuji').
+    dir_from_prod: str, optional
+        The directory path from the specprod root to the coadd and zbest files (e.g., 'healpix/main/dark/21/2196').
+    smoothing_sigma: float, optional
+        The sigma for Gaussian smoothing applied to the spectra for better visualization (in pixels).
+    save_dir: str or None, optional
+        If provided, the directory where the raw and model spectra will be saved as text files. If None, the spectra will not be saved to files.
+    
+    Returns:
+    --------
+    wave: 1D numpy array
+        The observed wavelength array (in Angstroms).
+    flux: 1D numpy array
+        The observed flux array (in erg s^-1 cm^-2 Angstrom^-1),
+        smoothed with a Gaussian kernel for better visualization.
+    txflux: 1D numpy array
+        The best-fit redrock model flux array (in erg s^-1 cm^-2 Angstrom^-1),
+        convolved with the instrument resolution and smoothed for visualization.
+    z: float
+        The redshift of the best-fit model.
+    
+    Example:
+    --------
+    Using the target ID 39628462612284326 from DESI, you can call the function as follows:
+    >>> wave, flux, txflux, z = get_desi_spectrum(39628462612284326, specprod='iron', dir_from_prod='healpix/main/dark/21/2196')
+    
+    This will return the spectrum and model for: https://www.legacysurvey.org/viewer/desi-spectrum/dr1/targetid39628462612284326
+    """
+    # Load Redrock Templates
+    templates = dict()
+    for filename in redrock.templates.find_templates():
+        t = redrock.templates.Template(filename)
+        templates[(t.template_type, t.sub_type)] = t
+    
+    # Get the coadd and zbest files for the specified product and directory.
+    coadd_pattern = '/'.join([os.environ['DESI_SPECTRO_REDUX'], specprod, dir_from_prod, 'coadd*.fits'])
+    zbest_pattern = '/'.join([os.environ['DESI_SPECTRO_REDUX'], specprod, dir_from_prod, 'redrock*.fits'])
+    
+    # Loop over coadd and zbest files to find the spectrum for the given targetid.
+    coadd_files = sorted(glob(coadd_pattern))
+    zbest_files = sorted(glob(zbest_pattern))
+    for cafile, zbfile in zip(coadd_files, zbest_files):
+        # Access data per petal.
+        zbest = Table.read(zbfile, hdu=1).filled('')
+        pspectra = read_spectra(cafile)      # coadded exposures, separate cameras
+        cspectra = coadd_cameras(pspectra)   # coadd B, R, Z
+        fibermap = cspectra.fibermap
+
+        # Check if the targetid is in this petal's fibermap.
+        
+        if targetid in fibermap['TARGETID']:
+            break # Found the petal containing the targetid, exit loop.
+        
+    idx = np.where(fibermap['TARGETID'] == targetid)[0][0]
+    
+    z = zbest['Z'][idx]
+    wave = cspectra.wave['brz']
+    flux = cspectra.flux['brz'][idx]
+    res = cspectra.resolution_data['brz'][idx]
+    
+    spectype = zbest['SPECTYPE'][idx].strip() if zbest['SPECTYPE'][idx] else ''
+    subtype = zbest['SUBTYPE'][idx].strip() if zbest['SUBTYPE'][idx] else ''
+    
+    # Evaluate the best-fit template at the observed wavelengths, applying redshift and resolution.
+    fulltype = (spectype, subtype)
+    ncoeff = templates[fulltype].flux.shape[0]
+    coeff = zbest['COEFF'][idx][0:ncoeff] 
+    tflux = templates[fulltype].flux.T.dot(coeff)
+    twave = templates[fulltype].wave * (1 + z)
+    
+    R = Resolution(res)
+    txflux = R.dot(resample_flux(wave, twave, tflux))
+    
+    # Apply small gaussian smoothing to the fluxes for better visualization.
+    flux = gaussian_filter1d(flux, sigma=smoothing_sigma) 
+    txflux = gaussian_filter1d(txflux, sigma=smoothing_sigma)
+    
+    if save_dir is not None:
+        # Save raw data to a file with a header containing the target information.
+        header = f'TARGETID={targetid}, Z={z:.3f}, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
+        header += 'wave_A flux\n'
+        np.savetxt('desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
+
+        # Save model data to a file with a header containing the model information.
+        header = f'Model for TARGETID={targetid} at z=0, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
+        header += 'wave_A flux\n'
+        wave_model_z0 = wave / (1 + z) # Shift observed wavelengths to z=0 frame
+        np.savetxt('redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
+    
+    return wave, flux, txflux, z

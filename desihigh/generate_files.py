@@ -1,14 +1,26 @@
 # This file will contain all the functions created to generate the DESIHIGH files
 # Some of those functions might have hardcoded paths or parameters.
 
+import os
 import pickle
+from glob import glob
+from pathlib import Path
+
 import fitsio
+import getdist
 import numpy as np
 import numpy.lib.recfunctions as rfn
+from getdist import plots, MCSamples
+from scipy.ndimage import gaussian_filter1d
 from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
 
-import os
+from desispec.io import read_spectra
+from desispec.coaddition import coadd_cameras
+from desispec.interpolation import resample_flux
+from desispec.resolution import Resolution
+import redrock.templates
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def generate_tile_data(
@@ -281,3 +293,178 @@ def gen_black_body(filename: str, save_to: str, shift: float = 0.3) -> None:
     stack = np.column_stack((wavelength, shifted_wavelength, flux))
     headers = "wavelength_nm, shifted_wavelength_nm, flux_Wm2nm1"
     np.savetxt(save_to, stack, delimiter=",", header=headers)
+
+def get_desi_spectrum(
+    targetid: int, 
+    specprod: str = 'iron', 
+    dir_from_prod: str = 'healpix/main/dark/21/2196', # DR1 example directory structure
+    smoothing_sigma: int = 1.0,
+    save_dir: str | None = None,
+):
+    """
+    Get the observed spectrum and best-fit redrock model for a given DESI target ID.
+    Requires to be run at NERSC in the desimodules environment with access to the DESI spectroscopic reduction products.
+    Inspired from: https://github.com/desihub/timedomain/blob/master/desitrip/docs/nb/RedrockResiduals.ipynb
+    
+    Parameters:
+    -----------
+    targetid: int
+        The DESI target ID for which to retrieve the spectrum and model.
+    specprod: str, optional
+        The DESI spectroscopic reduction product (e.g., 'iron', 'fuji').
+    dir_from_prod: str, optional
+        The directory path from the specprod root to the coadd and zbest files (e.g., 'healpix/main/dark/21/2196').
+    smoothing_sigma: float, optional
+        The sigma for Gaussian smoothing applied to the spectra for better visualization (in pixels).
+    save_dir: str or None, optional
+        If provided, the directory where the raw and model spectra will be saved as text files. If None, the spectra will not be saved to files.
+    
+    Returns:
+    --------
+    wave: 1D numpy array
+        The observed wavelength array (in Angstroms).
+    flux: 1D numpy array
+        The observed flux array (in erg s^-1 cm^-2 Angstrom^-1),
+        smoothed with a Gaussian kernel for better visualization.
+    txflux: 1D numpy array
+        The best-fit redrock model flux array (in erg s^-1 cm^-2 Angstrom^-1),
+        convolved with the instrument resolution and smoothed for visualization.
+    z: float
+        The redshift of the best-fit model.
+    
+    Example:
+    --------
+    Using the target ID 39628462612284326 from DESI, you can call the function as follows:
+    >>> wave, flux, txflux, z = get_desi_spectrum(39628462612284326, specprod='iron', dir_from_prod='healpix/main/dark/21/2196')
+    
+    This will return the spectrum and model for: https://www.legacysurvey.org/viewer/desi-spectrum/dr1/targetid39628462612284326
+    """
+    # Load Redrock Templates
+    templates = dict()
+    for filename in redrock.templates.find_templates():
+        t = redrock.templates.Template(filename)
+        templates[(t.template_type, t.sub_type)] = t
+    
+    # Get the coadd and zbest files for the specified product and directory.
+    coadd_pattern = '/'.join([os.environ['DESI_SPECTRO_REDUX'], specprod, dir_from_prod, 'coadd*.fits'])
+    zbest_pattern = '/'.join([os.environ['DESI_SPECTRO_REDUX'], specprod, dir_from_prod, 'redrock*.fits'])
+    
+    # Loop over coadd and zbest files to find the spectrum for the given targetid.
+    coadd_files = sorted(glob(coadd_pattern))
+    zbest_files = sorted(glob(zbest_pattern))
+    for cafile, zbfile in zip(coadd_files, zbest_files):
+        # Access data per petal.
+        zbest = Table.read(zbfile, hdu=1).filled('')
+        pspectra = read_spectra(cafile)      # coadded exposures, separate cameras
+        cspectra = coadd_cameras(pspectra)   # coadd B, R, Z
+        fibermap = cspectra.fibermap
+
+        # Check if the targetid is in this petal's fibermap.
+        
+        if targetid in fibermap['TARGETID']:
+            break # Found the petal containing the targetid, exit loop.
+        
+    idx = np.where(fibermap['TARGETID'] == targetid)[0][0]
+    
+    z = zbest['Z'][idx]
+    wave = cspectra.wave['brz']
+    flux = cspectra.flux['brz'][idx]
+    res = cspectra.resolution_data['brz'][idx]
+    
+    spectype = zbest['SPECTYPE'][idx].strip() if zbest['SPECTYPE'][idx] else ''
+    subtype = zbest['SUBTYPE'][idx].strip() if zbest['SUBTYPE'][idx] else ''
+    
+    # Evaluate the best-fit template at the observed wavelengths, applying redshift and resolution.
+    fulltype = (spectype, subtype)
+    ncoeff = templates[fulltype].flux.shape[0]
+    coeff = zbest['COEFF'][idx][0:ncoeff] 
+    tflux = templates[fulltype].flux.T.dot(coeff)
+    twave = templates[fulltype].wave * (1 + z)
+    
+    R = Resolution(res)
+    txflux = R.dot(resample_flux(wave, twave, tflux))
+    
+    # Apply small gaussian smoothing to the fluxes for better visualization.
+    flux = gaussian_filter1d(flux, sigma=smoothing_sigma) 
+    txflux = gaussian_filter1d(txflux, sigma=smoothing_sigma)
+    
+    if save_dir is not None:
+        save_dir = Path(save_dir)
+        
+        # Save raw data to a file with a header containing the target information.
+        header = f'TARGETID={targetid}, Z={z:.3f}, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
+        header += 'wave_A flux\n'
+        np.savetxt(save_dir / 'desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
+
+        # Save model data to a file with a header containing the model information.
+        header = f'Model for TARGETID={targetid} at z=0, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
+        header += 'wave_A flux\n'
+        wave_model_z0 = wave / (1 + z) # Shift observed wavelengths to z=0 frame
+        np.savetxt(save_dir / 'redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
+    
+    return wave, flux, txflux, z
+
+CHAIN_MAPPING = {
+    'omegam': 'Omega_m',
+    'w': 'w0_fld',
+    'wa': 'wa_fld',
+    'H0rdrag': 'H0_rd',
+    'rdrag': 'rd',
+}
+
+def get_desi_chain(
+    chains_dir: str = '/global/cfs/cdirs/desi/public/papers/y3/bao-cosmo-params/cobaya', 
+    model: str = 'base_w_wa', 
+    dataset: str = 'desi-bao-all_CMB-compressed-theta-ombh2-ombch2_desy5sn',
+    parameters = ['age', 'rdrag', 'H0rdrag', 'omegam', 'w', 'wa'],
+    mapping = CHAIN_MAPPING,
+    save_dir: str | None = None,
+) -> MCSamples:
+    """
+    Gets a DESI cosmological parameter chain from the specified directory, extracts the specified parameters, and optionally saves the new chain to a file.
+    Data is from: https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html
+    
+    Parameters
+    ----------
+    chains_dir : str, optional
+        The directory containing the cosmological parameter chains, by default '/global/cfs/cdirs/desi/public/papers/y3/bao-cosmo-params/cobaya'
+    model : str, optional
+        The model name, by default 'base_w_wa'
+    dataset : str, optional
+        The dataset name, by default 'desi-bao-all_CMB-compressed-theta-ombh2-ombch2_desy5sn'
+    parameters : list, optional
+        The parameters to extract from the chain, by default ['age', 'rdrag', 'H0rdrag', 'omegam', 'w', 'wa']
+    mapping : _type_, optional
+        A mapping from the original parameter names to the desired names, by default CHAIN_MAPPING
+    save_dir : str | None, optional
+        The directory to save the new chain to, by default None
+
+    Returns
+    -------
+    MCSamples
+        A new MCSamples object containing only the specified parameters, with names mapped according to the provided mapping. 
+        If save_dir is not None, the new chain is also saved to a .npy file in the specified directory.
+    """
+    chains_dir = Path(chains_dir) # Convert to Path object
+    
+    chain = getdist.loadMCSamples(str(chains_dir / model / dataset / 'chain'))
+
+    # Print the names of the parameters in the chain
+    print("Parameters in the chain:")
+    print(chain.getParamNames().list())
+
+    # Create a new McSamples object with the selected parameters
+    idx = [chain.getParamNames().list().index(param) for param in parameters]
+    names = [mapping.get(param, param) for param in parameters]
+    labels = [chain.parLabel(param) for param in parameters]
+    new_chain = MCSamples(
+        samples = chain.samples[:, idx],
+        names = names,
+        labels = labels,
+    )
+
+    if save_dir is not None:
+        save_dir = Path(save_dir) # Convert to Path object
+        np.save(save_dir / 'desi_dr2_chain.npy', new_chain) # Save the new chain to a file
+    
+    return new_chain

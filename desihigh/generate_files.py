@@ -4,10 +4,13 @@
 import os
 import pickle
 from glob import glob
+from pathlib import Path
 
 import fitsio
+import getdist
 import numpy as np
 import numpy.lib.recfunctions as rfn
+from getdist import plots, MCSamples
 from scipy.ndimage import gaussian_filter1d
 from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
@@ -385,15 +388,81 @@ def get_desi_spectrum(
     txflux = gaussian_filter1d(txflux, sigma=smoothing_sigma)
     
     if save_dir is not None:
+        save_dir = Path(save_dir)
+        
         # Save raw data to a file with a header containing the target information.
         header = f'TARGETID={targetid}, Z={z:.3f}, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
         header += 'wave_A flux\n'
-        np.savetxt('desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
+        np.savetxt(save_dir / 'desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
 
         # Save model data to a file with a header containing the model information.
         header = f'Model for TARGETID={targetid} at z=0, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
         header += 'wave_A flux\n'
         wave_model_z0 = wave / (1 + z) # Shift observed wavelengths to z=0 frame
-        np.savetxt('redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
+        np.savetxt(save_dir / 'redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
     
     return wave, flux, txflux, z
+
+CHAIN_MAPPING = {
+    'omegam': 'Omega_m',
+    'w': 'w0_fld',
+    'wa': 'wa_fld',
+    'H0rdrag': 'H0_rd',
+    'rdrag': 'rd',
+}
+
+def get_desi_chain(
+    chains_dir: str = '/global/cfs/cdirs/desi/public/papers/y3/bao-cosmo-params/cobaya', 
+    model: str = 'base_w_wa', 
+    dataset: str = 'desi-bao-all_CMB-compressed-theta-ombh2-ombch2_desy5sn',
+    parameters = ['age', 'rdrag', 'H0rdrag', 'omegam', 'w', 'wa'],
+    mapping = CHAIN_MAPPING,
+    save_dir: str | None = None,
+) -> MCSamples:
+    """
+    Gets a DESI cosmological parameter chain from the specified directory, extracts the specified parameters, and optionally saves the new chain to a file.
+
+    Parameters
+    ----------
+    chains_dir : str, optional
+        The directory containing the cosmological parameter chains, by default '/global/cfs/cdirs/desi/public/papers/y3/bao-cosmo-params/cobaya'
+    model : str, optional
+        The model name, by default 'base_w_wa'
+    dataset : str, optional
+        The dataset name, by default 'desi-bao-all_CMB-compressed-theta-ombh2-ombch2_desy5sn'
+    parameters : list, optional
+        The parameters to extract from the chain, by default ['age', 'rdrag', 'H0rdrag', 'omegam', 'w', 'wa']
+    mapping : _type_, optional
+        A mapping from the original parameter names to the desired names, by default CHAIN_MAPPING
+    save_dir : str | None, optional
+        The directory to save the new chain to, by default None
+
+    Returns
+    -------
+    MCSamples
+        A new MCSamples object containing only the specified parameters, with names mapped according to the provided mapping. 
+        If save_dir is not None, the new chain is also saved to a .npy file in the specified directory.
+    """
+    chains_dir = Path(chains_dir) # Convert to Path object
+    
+    chain = getdist.loadMCSamples(str(chains_dir / model / dataset / 'chain'))
+
+    # Print the names of the parameters in the chain
+    print("Parameters in the chain:")
+    print(chain.getParamNames().list())
+
+    # Create a new McSamples object with the selected parameters
+    idx = [chain.getParamNames().list().index(param) for param in parameters]
+    names = [mapping.get(param, param) for param in parameters]
+    labels = [chain.parLabel(param) for param in parameters]
+    new_chain = MCSamples(
+        samples = chain.samples[:, idx],
+        names = names,
+        labels = labels,
+    )
+
+    if save_dir is not None:
+        save_dir = Path(save_dir) # Convert to Path object
+        np.save(save_dir / 'desi_dr2_chain.npy', new_chain) # Save the new chain to a file
+    
+    return new_chain

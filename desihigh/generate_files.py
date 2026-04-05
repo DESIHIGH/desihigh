@@ -304,6 +304,7 @@ def get_desi_spectrum(
     """
     Get the observed spectrum and best-fit redrock model for a given DESI target ID.
     Requires to be run at NERSC in the desimodules environment with access to the DESI spectroscopic reduction products.
+    Inspired from: https://github.com/desihub/timedomain/blob/master/desitrip/docs/nb/RedrockResiduals.ipynb
     
     Parameters:
     -----------
@@ -421,7 +422,8 @@ def get_desi_chain(
 ) -> MCSamples:
     """
     Gets a DESI cosmological parameter chain from the specified directory, extracts the specified parameters, and optionally saves the new chain to a file.
-
+    Data is from: https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html
+    
     Parameters
     ----------
     chains_dir : str, optional

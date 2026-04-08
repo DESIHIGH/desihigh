@@ -265,7 +265,7 @@ def plot_sky_map(sky_map, longitude, latitude):
     axis = plt.gca()
     
     axis.set_xlabel('right ascension (RA) [degrees]', color='cyan', weight='bold')
-    axis.set_ylabel('declination (Dec.) [degrees]', color='magenta', weight='bold')
+    axis.set_ylabel('declination (dec) [degrees]', color='magenta', weight='bold')
     for label in axis.get_xticklabels():
         label.set_fontweight('bold')
         label.set_color('cyan')
@@ -403,7 +403,7 @@ def plot_transformed_sky_map(sky_map, longitude, latitude, long_offset, lat_offs
     axis = plt.gca()
     
     axis.set_xlabel('right ascension (RA) [degrees]', color='cyan', weight='bold')
-    axis.set_ylabel('declination (Dec.) [degrees]', color='magenta', weight='bold')
+    axis.set_ylabel('declination (dec) [degrees]', color='magenta', weight='bold')
     for label in axis.get_xticklabels():
         label.set_fontweight('bold')
         label.set_color('cyan')

@@ -149,14 +149,14 @@ def add_coordinate(latitude, longitude, rotate, zorder, coord='earth'):
         text_longitude_transform, text_latitude_transform = longitude, latitude-10
     else:
         text_longitude_transform, text_latitude_transform = rotate(longitude, latitude-10, lonlat=True)
-    long_label = plt.text(flip*np.deg2rad([text_longitude_transform]), np.deg2rad([text_latitude_transform]), text_longitude,color='cyan', weight='bold');
+    long_label = plt.text(flip*np.deg2rad(text_longitude_transform), np.deg2rad(text_latitude_transform), text_longitude,color='cyan', weight='bold');
     
     if rotate is None:
         text_longitude_transform, text_latitude_transform = longitude+10*flip, latitude
     else:
         text_longitude_transform, text_latitude_transform = rotate(longitude+10*flip, latitude, lonlat=True)
         
-    lat_label = plt.text(flip*np.deg2rad([text_longitude_transform]), np.deg2rad([text_latitude_transform]), text_latitude,color='magenta', weight='bold');
+    lat_label = plt.text(flip*np.deg2rad(text_longitude_transform), np.deg2rad(text_latitude_transform), text_latitude,color='magenta', weight='bold');
     
     long_label.set_path_effects([patheffects.Stroke(linewidth=3, foreground='black'),
                                  patheffects.Normal()])

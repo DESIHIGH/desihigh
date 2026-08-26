@@ -24,6 +24,7 @@ from desispec.interpolation import resample_flux
 from desispec.resolution import Resolution
 import redrock.templates
 
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def generate_tile_data(
@@ -300,9 +301,11 @@ def gen_black_body(filename: str, save_to: str, shift: float = 0.3) -> None:
 def get_desi_spectrum(
     targetid: int, 
     specprod: str = 'iron', 
-    dir_from_prod: str = 'healpix/main/dark/21/2196', # DR1 example directory structure
+    release: str = 'dr1',
+    dir_from_prod: str | None = None, # DR1 example directory structure
     smoothing_sigma: int = 1.0,
     save_dir: str | None = None,
+    file_prefix: str = '',
 ):
     """
     Get the observed spectrum and best-fit redrock model for a given DESI target ID.
@@ -315,12 +318,16 @@ def get_desi_spectrum(
         The DESI target ID for which to retrieve the spectrum and model.
     specprod: str, optional
         The DESI spectroscopic reduction product (e.g., 'iron', 'fuji').
+    release: str, optional
+        The DESI data release (e.g., 'edr', 'dr1')
     dir_from_prod: str, optional
         The directory path from the specprod root to the coadd and zbest files (e.g., 'healpix/main/dark/21/2196').
     smoothing_sigma: float, optional
         The sigma for Gaussian smoothing applied to the spectra for better visualization (in pixels).
     save_dir: str or None, optional
         If provided, the directory where the raw and model spectra will be saved as text files. If None, the spectra will not be saved to files.
+    file_prefix : stre
+        A prefix added to the file output
     
     Returns:
     --------
@@ -347,6 +354,18 @@ def get_desi_spectrum(
     for filename in redrock.templates.find_templates():
         t = redrock.templates.Template(filename)
         templates[(t.template_type, t.sub_type)] = t
+
+    if dir_from_prod is None:
+
+        base_dir = f'/global/cfs/cdirs/desi/public/{release}/spectro/redux/{specprod}'
+        zcat = Table(fitsio.read(f'{base_dir}/zcatalog/v1/zall-pix-{specprod}.fits', "ZCATALOG", columns=['TARGETID', 'SURVEY', 'PROGRAM', 'HEALPIX']))
+        target = zcat[zcat['TARGETID']==targetid]
+        healpixel = target['HEALPIX'].item()
+        hpixgroup = healpixel//100
+        survey = target['SURVEY'].item()
+        program = target['PROGRAM'].item()
+                
+        dir_from_prod = f'healpix/{survey}/{program}/{hpixgroup}/{healpixel}'
     
     # Get the coadd and zbest files for the specified product and directory.
     coadd_pattern = '/'.join([os.environ['DESI_SPECTRO_REDUX'], specprod, dir_from_prod, 'coadd*.fits'])
@@ -393,17 +412,20 @@ def get_desi_spectrum(
     
     if save_dir is not None:
         save_dir = Path(save_dir)
+
+        if file_prefix != '':
+            file_prefix = file_prefix + '_'
         
         # Save raw data to a file with a header containing the target information.
         header = f'TARGETID={targetid}, Z={z:.3f}, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
         header += 'wave_A flux\n'
-        np.savetxt(save_dir / 'desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
+        np.savetxt(save_dir / f'{file_prefix}desi_spectra_data.txt', np.column_stack([wave, flux]), header=header)
 
         # Save model data to a file with a header containing the model information.
         header = f'Model for TARGETID={targetid} at z=0, SPECTYPE={spectype}, SUBTYPE={subtype}, smoothing={smoothing_sigma}\n'
         header += 'wave_A flux\n'
         wave_model_z0 = wave / (1 + z) # Shift observed wavelengths to z=0 frame
-        np.savetxt(save_dir / 'redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
+        np.savetxt(save_dir / f'{file_prefix}redrock_model_data.txt', np.column_stack([wave_model_z0, txflux]), header=header)
     
     return wave, flux, txflux, z
 

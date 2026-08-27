@@ -16,6 +16,7 @@ from astropy.table import Table, vstack
 from astropy.cosmology import FlatLambdaCDM
 from PIL import Image
 from matplotlib.image import pil_to_array
+import matplotlib.pyplot as plt
 import healpy as hp
 
 from desispec.io import read_spectra
@@ -529,3 +530,23 @@ def generate_earth_healpix(image_path='../images/MTU-Earth.jpg', output_path='..
     earth_healpix = earth_healpix**(.75)
 
     earth_healpix.tofile(output_path)
+
+def construct_measurement_chain(save_path):
+    stages = ["Target", "Focal plane", "Fiber", "Spectrograph", "CCD", "Spectrum"]
+    x = np.arange(len(stages))
+    
+    plt.figure(figsize=(12, 2.5))
+    plt.scatter(x, np.zeros_like(x), s=260)
+    
+    for i, label in enumerate(stages):
+        plt.text(i, 0.1, label, ha="center")
+    
+    for i in range(len(stages) - 1):
+        plt.annotate("", xy=(i + 0.7, 0), xytext=(i + 0.3, 0),
+                     arrowprops=dict(arrowstyle="->"))
+    
+    plt.xticks([])
+    plt.yticks([])
+    plt.ylim(-0.18, 0.22)
+    plt.title("Simplified DESI Measurement Chain")
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
